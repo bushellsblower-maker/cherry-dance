@@ -14,7 +14,7 @@ export const Route = createRootRoute({
         content:
           "Cherry Dance studios in central Eastbourne: pole, aerial, dance and fitness. Book on TeamUp, shop uniforms, and see Cabaret Cerises show dates.",
       },
-      { name: "theme-color", content: "#c81e3a" },
+      { name: "theme-color", content: "#CD0900" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

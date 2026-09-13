@@ -37,8 +37,9 @@ function GoLivePage() {
             the public site after a domain cutover.
           </li>
           <li>
-            Keep TeamUp, Online Ticket Seller, and the Wix shop as systems of
-            record. This site should link out, not clone checkout.
+            Keep TeamUp, Online Ticket Seller, and Clothing Kings as systems of
+            record. This site should link out, not clone checkout. Do not send
+            shoppers to the outdated Wix /shop tiles.
           </li>
           <li>
             Plan image uploads (R2 + Images / CDN) instead of stuffing photos
@@ -52,9 +53,10 @@ function GoLivePage() {
             Snapshot KV (or export JSON from Admin) for backups and rollback.
           </li>
           <li>
-            After each show, move it to “passed”, add the next ticket URL, and
-            keep Grove 2027 dates marked scheduled until the box office lists
-            them.
+            After each show, move it to “passed” and keep the exact Online Ticket
+            Seller event URL. Grove 2027 Fridays already have event links
+            (174888–174893); keep them scheduled until you promote one. Do not
+            invent ticket prices. Keep 18+ on every cabaret listing.
           </li>
         </ol>
         <div className="mt-8 flex flex-wrap gap-3">

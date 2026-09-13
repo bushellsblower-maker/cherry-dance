@@ -215,10 +215,41 @@ function AdminPage() {
             }
           />
           <Field
-            label="Shop URL"
+            label="Shop URL (Clothing Kings catalog)"
             value={draft.shop.url}
             onChange={(value) =>
               setDraft({ ...draft, shop: { ...draft.shop, url: value } })
+            }
+          />
+          <Field
+            label="Shop CTA label"
+            value={draft.shop.ctaLabel}
+            onChange={(value) =>
+              setDraft({ ...draft, shop: { ...draft.shop, ctaLabel: value } })
+            }
+          />
+          <TextArea
+            label="Shop body"
+            value={draft.shop.body}
+            onChange={(value) =>
+              setDraft({ ...draft, shop: { ...draft.shop, body: value } })
+            }
+          />
+          <TextArea
+            label="Shop price note"
+            value={draft.shop.priceNote}
+            onChange={(value) =>
+              setDraft({ ...draft, shop: { ...draft.shop, priceNote: value } })
+            }
+          />
+          <TextArea
+            label="Booking TeamUp note"
+            value={draft.booking.teamUpNote}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                booking: { ...draft.booking, teamUpNote: value },
+              })
             }
           />
           <Field
@@ -252,6 +283,13 @@ function AdminPage() {
               setDraft({ ...draft, ctas: { ...draft.ctas, shows: value } })
             }
           />
+          <Field
+            label="Hen parties CTA label"
+            value={draft.ctas.hens}
+            onChange={(value) =>
+              setDraft({ ...draft, ctas: { ...draft.ctas, hens: value } })
+            }
+          />
           <TextArea
             label="Booking body"
             value={draft.booking.body}
@@ -259,6 +297,130 @@ function AdminPage() {
               setDraft({ ...draft, booking: { ...draft.booking, body: value } })
             }
           />
+        </section>
+
+        <section className="mt-6 rounded-3xl bg-white p-5 ring-1 ring-cherry/10">
+          <h2 className="font-display text-2xl">Shop items</h2>
+          <p className="mt-2 text-sm text-muted">
+            Clothing Kings examples only. Mark prices ex VAT. Do not use outdated
+            Wix /shop tiles.
+          </p>
+          {draft.shop.items.map((item, index) => (
+            <div key={`${item.name}-${index}`} className="mt-3 grid gap-3 sm:grid-cols-2">
+              <Field
+                label="Item"
+                value={item.name}
+                onChange={(value) => {
+                  const items = draft.shop.items.slice();
+                  items[index] = { ...item, name: value };
+                  setDraft({ ...draft, shop: { ...draft.shop, items } });
+                }}
+              />
+              <Field
+                label="Detail / price"
+                value={item.detail}
+                onChange={(value) => {
+                  const items = draft.shop.items.slice();
+                  items[index] = { ...item, detail: value };
+                  setDraft({ ...draft, shop: { ...draft.shop, items } });
+                }}
+              />
+            </div>
+          ))}
+        </section>
+
+        <section className="mt-6 rounded-3xl bg-white p-5 ring-1 ring-cherry/10">
+          <h2 className="font-display text-2xl">Hen &amp; adult parties</h2>
+          <Field
+            label="Heading"
+            value={draft.henParties.heading}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: { ...draft.henParties, heading: value },
+              })
+            }
+          />
+          <TextArea
+            label="Intro"
+            value={draft.henParties.intro}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: { ...draft.henParties, intro: value },
+              })
+            }
+          />
+          <TextArea
+            label="Design-your-own note"
+            value={draft.henParties.designNote}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: { ...draft.henParties, designNote: value },
+              })
+            }
+          />
+          <Field
+            label="Contact CTA label"
+            value={draft.henParties.contactLabel}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: { ...draft.henParties, contactLabel: value },
+              })
+            }
+          />
+          <Field
+            label="Hen parties page URL"
+            value={draft.henParties.pageUrl}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: { ...draft.henParties, pageUrl: value },
+              })
+            }
+          />
+          {draft.henParties.packages.map((pack, index) => (
+            <div key={`${pack.name}-${index}`} className="mt-4 rounded-2xl bg-cream p-4">
+              <Field
+                label="Package name"
+                value={pack.name}
+                onChange={(value) => {
+                  const packages = draft.henParties.packages.slice();
+                  packages[index] = { ...pack, name: value };
+                  setDraft({
+                    ...draft,
+                    henParties: { ...draft.henParties, packages },
+                  });
+                }}
+              />
+              <Field
+                label="Price"
+                value={pack.price}
+                onChange={(value) => {
+                  const packages = draft.henParties.packages.slice();
+                  packages[index] = { ...pack, price: value };
+                  setDraft({
+                    ...draft,
+                    henParties: { ...draft.henParties, packages },
+                  });
+                }}
+              />
+              <TextArea
+                label="Includes (optional)"
+                value={pack.includes ?? ""}
+                onChange={(value) => {
+                  const packages = draft.henParties.packages.slice();
+                  packages[index] = { ...pack, includes: value || undefined };
+                  setDraft({
+                    ...draft,
+                    henParties: { ...draft.henParties, packages },
+                  });
+                }}
+              />
+            </div>
+          ))}
         </section>
 
         <section className="mt-6 rounded-3xl bg-white p-5 ring-1 ring-cherry/10">

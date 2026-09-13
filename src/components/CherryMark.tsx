@@ -18,8 +18,8 @@ export function CherryMark({ className = "h-10 w-10" }: { className?: string }) 
         strokeWidth="3.2"
         strokeLinecap="round"
       />
-      <circle cx="22" cy="40" r="14" fill="#c81e3a" />
-      <circle cx="42" cy="38" r="13" fill="#9b1530" />
+      <circle cx="22" cy="40" r="14" fill="#CD0900" />
+      <circle cx="42" cy="38" r="13" fill="#9a0700" />
       <circle cx="18" cy="34" r="4" fill="#ffd0db" opacity="0.7" />
     </svg>
   );

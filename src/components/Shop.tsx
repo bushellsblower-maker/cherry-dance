@@ -10,8 +10,9 @@ export function Shop({ content }: { content: SiteContent }) {
             <p className="chip bg-gold/20 text-ink">Link-out only</p>
             <h2 className="font-display mt-3 text-3xl sm:text-5xl">{content.shop.heading}</h2>
             <p className="mt-3 text-ink-soft">{content.shop.body}</p>
+            <p className="mt-2 text-sm text-muted">{content.shop.priceNote}</p>
             <a href={content.shop.url} className="btn btn-primary mt-6">
-              {content.ctas.shop} on cherry-dance.com
+              {content.shop.ctaLabel}
               <ArrowUpRight size={18} />
             </a>
           </div>
