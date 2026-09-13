@@ -1,0 +1,127 @@
+{
+  "brand": {
+    "name": "Cherry Dance",
+    "tagline": "Dance and Fitness Classes in Central Eastbourne",
+    "founded": 2012,
+    "founder": "Cheryl Cooper",
+    "email": "cherrydance@hotmail.co.uk",
+    "phone": "07793 383956",
+    "addresses": [
+      {
+        "label": "Studios 1 & 2",
+        "address": "7-9 Wish Road, Eastbourne BN21 4NX"
+      },
+      {
+        "label": "Studio 3",
+        "address": "5-6 Cornfield Lane, Eastbourne BN21 4NE"
+      }
+    ],
+    "source_site": "https://www.cherry-dance.com",
+    "socials": {
+      "facebook": "https://www.facebook.com/cherrydancestudio7",
+      "instagram": "https://www.instagram.com/cherry_dance/"
+    }
+  },
+  "booking": {
+    "provider": "TeamUp / GoTeamUp",
+    "url": "https://goteamup.com/p/2104075-cherry-dance/c/schedule",
+    "also": "Wix Bookings widgets on source site; private classes via email"
+  },
+  "shop": {
+    "url": "https://www.cherry-dance.com/shop",
+    "note": "Link out to existing Wix shop \u2014 uniform items (tops \u00a315, shorts \u00a335, various merch)"
+  },
+  "classes": {
+    "pole_fitness": [
+      "Beginners: Mondays 7pm, Thursdays 6pm",
+      "Inter-foundation: Mondays 6pm, Thursdays 6pm",
+      "Intermediate & Advanced: Wednesdays 7pm, Fridays 5.30pm"
+    ],
+    "aerial_hoop": [
+      "Beginners Hoop & Silks: Tuesdays 6pm",
+      "Intermediate: Tuesdays 7pm",
+      "Kids: Thursdays 4.45pm"
+    ],
+    "yolates": [
+      "Wednesdays 6pm"
+    ],
+    "dance": [
+      "Burlesque: Wednesdays 7pm",
+      "Boylesque: Tuesdays 8.15pm",
+      "Cherry Long Stockings Performance Troupe: Wednesdays 8pm",
+      "Cherry Dance Fit: Thursdays 7.30pm",
+      "Street Dance: Thursdays 8.30pm"
+    ],
+    "private": "One or two-to-one private classes; also choreography, wedding dances, Bollywood, breakdance, contemporary, commercial, ballet, pointe, yoga, pilates, jazz, modern ISTD, etc."
+  },
+  "cabaret": {
+    "name": "Cabaret Cerises",
+    "description": "Burlesque / cabaret spin-off \u2014 ~6 shows a year in Eastbourne theatres. Founded by Cheryl Cooper with Simon Drake. Adult-only.",
+    "email": "cabaretcerises@outlook.com",
+    "socials": {
+      "facebook_performance": "https://www.facebook.com/cherrydanceperformance",
+      "instagram": "https://www.instagram.com/CabaretCerises"
+    },
+    "sites": {
+      "wix": "https://cabaretcerises.wixsite.com/eastbourne",
+      "tickets_home": "https://cabaretcerises.onlineticketseller.com/"
+    },
+    "performances_verified": [
+      {
+        "title": "Cabaret Cerises: 10 Years of Burlesque",
+        "date": "2026-09-12",
+        "time": "19:30",
+        "venue": "Royal Hippodrome Theatre, Eastbourne",
+        "price": "\u00a322.50",
+        "ticket_url": "https://royalhippodrome.com/event/cabaret-cerises-10-years-of-burlesque/",
+        "status": "passed",
+        "notes": "20% proceeds to Epilepsy Society; 18+. Venue page marked event has passed as of 2026-09-13.",
+        "sources": [
+          "https://royalhippodrome.com/event/cabaret-cerises-10-years-of-burlesque/"
+        ]
+      },
+      {
+        "title": "Cabaret Cerises October show 2026",
+        "date": "2026-10-02",
+        "time": "20:00",
+        "venue": "The Grove Theatre, Eastbourne",
+        "ticket_url": "https://cabaretcerises.onlineticketseller.com/",
+        "status": "upcoming",
+        "sources": [
+          "https://cabaretcerises.wixsite.com/eastbourne",
+          "https://allevents.in/org/cabaret-cerises/26305372"
+        ]
+      },
+      {
+        "title": "Cabaret Cerises December show 2026",
+        "date": "2026-12-04",
+        "time": "20:00",
+        "venue": "The Grove Theatre, Eastbourne",
+        "ticket_url": "https://cabaretcerises.onlineticketseller.com/",
+        "status": "upcoming",
+        "sources": [
+          "https://cabaretcerises.wixsite.com/eastbourne"
+        ]
+      },
+      {
+        "title": "Cabaret Cerises 2027 season (Grove Theatre)",
+        "dates": [
+          "2027-02-05",
+          "2027-04-02",
+          "2027-06-04",
+          "2027-08-06",
+          "2027-10-01",
+          "2027-12-03"
+        ],
+        "venue": "The Grove Theatre, Eastbourne",
+        "ticket_url": "https://cabaretcerises.onlineticketseller.com/",
+        "status": "scheduled",
+        "sources": [
+          "https://cabaretcerises.wixsite.com/eastbourne"
+        ]
+      }
+    ]
+  },
+  "instructors_note": "Cheryl Cooper (founder), Carl (pole since 2019), Emma (burlesque since 2020). Details on https://www.cherry-dance.com/instructors",
+  "design_direction": "Modern, interactive, fun \u2014 cherry/red/pink/black sparkle cabaret energy for Cerises breakout; warm welcoming studio vibe for main dance school. Mobile-first. Prominent upcoming performances so users don't hunt."
+}
