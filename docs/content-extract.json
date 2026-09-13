@@ -1,0 +1,624 @@
+{
+  "site": "Cherry Dance",
+  "source": "https://www.cherry-dance.com",
+  "extracted": "2026-09-13",
+  "method": "Opened live pages, then extracted verbatim text and media from rendered HTML plus Wix thunderbolt page JSON (so slideshow slides that are not in the first SSR paint are included). Typos and punctuation left as published. Nothing invented.",
+  "sitewide": {
+    "header": {
+      "heading": "Dance and Fitness Classes in Central Eastbourne",
+      "heading_style_observed": "white, bold, 44px, Arial/Helvetica sans-serif, centered",
+      "supporting_text": "Our friendly Cherry Dance studios offer a professional, supportive and fun space.\n\nJoin us for a variety of classes with quality teaching tailored to each student.",
+      "supporting_text_style_observed": "red, about 20px, centered. Matches site accent rgb(205, 9, 0)."
+    },
+    "navigation": [
+      {
+        "label": "HOME",
+        "url": "https://www.cherry-dance.com"
+      },
+      {
+        "label": "WEDDING DANCES & HEN PARTIES",
+        "url": "https://www.cherry-dance.com/wedding-dances-and-parties",
+        "children": [
+          {
+            "label": "WEDDING DANCES",
+            "url": "https://www.cherry-dance.com/wedding-dances"
+          },
+          {
+            "label": "HEN PARTIES",
+            "url": "https://www.cherry-dance.com/hen-parties"
+          }
+        ]
+      },
+      {
+        "label": "INSTRUCTORS",
+        "url": "https://www.cherry-dance.com/instructors"
+      },
+      {
+        "label": "SHOP",
+        "url": "https://www.cherry-dance.com/shop"
+      },
+      {
+        "label": "CONTACT",
+        "url": "https://www.cherry-dance.com/contact",
+        "children": [
+          {
+            "label": "NEWSLETTER",
+            "url": "https://www.cherry-dance.com/newsletter"
+          }
+        ]
+      }
+    ],
+    "social": {
+      "facebook": "https://www.facebook.com/cherrydancestudio7",
+      "instagram": "https://www.instagram.com/cherry_dance/"
+    },
+    "footer": {
+      "copyright": "© Cherry Dance 2022",
+      "address": "Cherry Dance, 7-9 Wish Road, Eastbourne BN21 4NX"
+    },
+    "email": "cherrydance@hotmail.co.uk"
+  },
+  "styling": {
+    "splash": {
+      "confirmed": true,
+      "role": "Site header / page background on every page examined",
+      "wix_title": "black splat background.jpg",
+      "url": "https://static.wixstatic.com/media/b963c7_2ac118c919ed45f29f6075e79382d28a~mv2.jpg",
+      "provided_url_matches": "https://static.wixstatic.com/media/b963c7_2ac118c919ed45f29f6075e79382d28a~mv2.jpg",
+      "source_size": {
+        "width": 1024,
+        "height": 768
+      },
+      "display": "fill, centered",
+      "observed": "Black field. Large white paint-splat burst behind the logo on the left. Smaller white and red paint droplets scattered across the black, denser toward the right and lower header. Header copy sits on the right in white (heading) and red (two supporting lines)."
+    },
+    "logo": {
+      "confirmed": true,
+      "url": "https://static.wixstatic.com/media/b963c7_1537f227774c474bb95d9148c7ea8572~mv2.png",
+      "provided_url_matches": "https://static.wixstatic.com/media/b963c7_1537f227774c474bb95d9148c7ea8572~mv2.png",
+      "alt": "Cherry-Dance-Transparent_edited_edited.p",
+      "source_size": {
+        "width": 842,
+        "height": 595
+      },
+      "observed": "Transparent PNG. Two red cherries with a green stem, white paint-splat burst, wordmark 'Cherry Dance' in black stacked type over the splat."
+    },
+    "palette_from_theme": {
+      "note": "Wix theme tokens actually used in branding. RGB triples as stored.",
+      "black": "0,0,0",
+      "white": "255,255,255",
+      "red_accent_color_13_and_39": "205,9,0",
+      "dark_red_color_14": "159,0,62",
+      "burgundy_color_15_and_37": "56,1,20",
+      "blush_color_12": "239,180,195",
+      "gold_color_18": "246,172,4",
+      "orange_color_19": "249,143,3"
+    },
+    "other_observed": [
+      "Nav bar is a dark strip; labels white uppercase; current section label red.",
+      "Section headings (INSTRUCTORS, WEDDING DANCES, etc.) are white on a dark grey bar with a small red dot.",
+      "Instructor names are red.",
+      "Homepage timetable cards alternate dark red and mauve/grey.",
+      "Hen package overlays sit on a semi-transparent white box over the slideshow photo."
+    ]
+  },
+  "pages": {
+    "homepage": {
+      "url": "https://www.cherry-dance.com/",
+      "title": "Cherry Dance Eastbourne: Home",
+      "meta_description": "Our friendly Cherry Dance studio offers a professional, supportive and fun space. Join us for a variety of classes with quality teaching tailored to each student.\n\nPole Fitness I Aerial Hoop Adults & Kids I Conditioning I Yolates I Burlesque I Boylesque I Street Dance I Choreography I Wedding Dances I Bollywood I Breakdance I Contemporary I Release I Commercial I Ballet I Pointe I Pas de Deux I Yoga I Pilates I Stretch & Flex, Jazz I Modern ISTD",
+      "meta_keywords": "Dance, classes, teaching, Pole Fitness, Aerial Hoop, Kids, Conditioning, Yolates, Burlesque, Boylesque, Street, Choreography, Wedding Dances, Bollywood, Breakdance, Contemporary, Release, Commercial, Ballet, Pointe, Yoga, Pilates, Stretch, Flex, Jazz, Modern",
+      "og_image": "https://static.wixstatic.com/media/b963c7_e4ab518d6a9b8388a75187309822d59f.jpg",
+      "content": {
+        "heading": "Class Timetable",
+        "classes": [
+          {
+            "name": "Pole Fitness",
+            "schedule": "Beginners: Mondays 7pm, Thursdays 6pm\nInter-foundation: Mondays 6pm, Thursdays 6pm\nIntermediate & Advanced: Wednesdays 7pm, Fridays 5.30pm"
+          },
+          {
+            "name": "Aerial Hoop",
+            "schedule": "Beginners Hoop & Silks: Tuesdays 6pm\nIntermediate: Tuesdays 7pm\nKids: Thursdays 4.45pm"
+          },
+          {
+            "name": "Yolates",
+            "schedule": "Wednesdays 6pm"
+          },
+          {
+            "name": "Dance",
+            "schedule": "Burlesque: Wednesdays 7pm\nBoylesque: Tuesdays 8.15pm\nCherry Long Stockings Performance Troupe: Wednesdays 8pm\nCherry Dance Fit: Thursdays 7.30pm\nStreet Dance: Thursdays 8.30pm"
+          }
+        ],
+        "private_classes": "Private Classes\nWe also offer one or two-to-one private classes at a time to suit you.\nIn addition to the classes listed above we offer choreography, wedding dances, Bollywood, breakdance, contemporary, release, commercial,ballet, pointe, pas de deux, yoga, pilates, stretch & flex, jazz and modern ISTD.\nContact to book: cherrydance@hotmail.co.uk",
+        "workshops": "Workshops\nWe regularly run an exciting and varied range of workshops. Click Live Bookings below to view.",
+        "book_your_space": "Book Your Space",
+        "live_bookings_button": "CLICK HERE",
+        "live_bookings_url": "https://goteamup.com/p/2104075-cherry-dance/c/schedule?startdate=2025-07-28&enddate=2025-08-31&venues=&category=&instructors=&offering_types=&age_restrictions=",
+        "app_links": {
+          "google_play": "https://play.google.com/store/apps/details?id=com.goteamup.app.customer&pcampaignid=web_share",
+          "app_store": "https://apps.apple.com/us/app/teamup-members/id1449504627?ign-itscg=30200&ign-itsct=apps_box_badge"
+        },
+        "social_feed": "Social Feed",
+        "facebook_feed_url": "http://www.facebook.com/cherrydancestudio7"
+      },
+      "notes": "Homepage unique photos are the shared splash and logo, plus a Google Play badge (not downloaded; it is a store badge, not studio photography). A TeamUp schedule widget is embedded under Book Your Space. Calendar class rows were not copied because they are a live third-party widget, not authored page copy."
+    },
+    "instructors": {
+      "url": "https://www.cherry-dance.com/instructors",
+      "title": "cheryl cooper",
+      "meta_description": "Cheryl Cooper, instructor, owner",
+      "meta_keywords": "cheryl cooper, cheryl degrees",
+      "heading": "INSTRUCTORS",
+      "footer_note": "All Cherry Dance instructors are fully qualified, insured and first aid trained.",
+      "instructors": [
+        {
+          "name": "CHERYL COOPER",
+          "role": "Founder",
+          "photo": {
+            "url": "https://static.wixstatic.com/media/b963c7_5a4f0c9d38909246338e58fb21c833f1.jpg",
+            "wix_filename": "549586_3630160[1].jpg",
+            "source_size": {
+              "width": 280,
+              "height": 373
+            },
+            "note": "Original upload is small (280×373)."
+          },
+          "bio": "Cheryl is a highly qualified and experienced dance instructor and founded Cherry Dance in 2012.\nHer training and qualifications include: Bachelor of Arts Degree in Dance (Creative Academy, West London – choreography, Bollywood, breakdance, contemporary, release, commercial, street, ballet, pointe, pas de deux, yoga, stretch & flex, jazz, modern, stage combat and rapier and dagger); anatomy and physiology; PTTLS teaching qualification; Diploma in Dance Instruction Modern (ISTD); instructor qualifications in pole fitness (choreographer of award-winning Inter-University Pole Dancing Championship 2020), aerial hoop, pilates and fitness classes; children’s pole & aerial fitness. Cheryl is also trained in burlesque, boylesque, wedding dances, silks and body conditioning.\nCheryl’s professional performances include Come Dine with Me (Sky One), Corporate Rudeye Dance Agency (02 Arena), Corporate Glastonbury Festival and Got to Dance (Sky One). She also choreographed a medal-winning British Gymnastics Championship routine.",
+          "quote": "“Cheryl is amazing... I have been going through a really hard time mentally and this beaut is helping me get back on track... There is no judgement and complete focus on what I want to achieve for myself.... She is pushing me physically and I'm loving it... She always stays to the level I am comfortable at unless she knows I'm wimping out lol.... Absolute fountain of knowledge. Such a welcoming environment. This woman builds people up with confidence and kindness.” Rhiannon"
+        },
+        {
+          "name": "CARL HALSTAD",
+          "role": "Pole Fitness Instructor",
+          "photo": {
+            "url": "https://static.wixstatic.com/media/b963c7_78b3ec19eddd4a94a2def32d4885c582~mv2.jpg",
+            "wix_filename": "28336842_10211200736679411_3655764480420",
+            "source_size": {
+              "width": 1511,
+              "height": 2015
+            }
+          },
+          "bio": "Carl is a qualified pole fitness instructor and has been teaching at Cherry Dance since 2019.",
+          "quote": "\"I’ve always been curious about pole, but never felt I had the body type for it. Carl has been incredible; he is supportive, encouraging and patient. His energy is infectious and the joy he shares with you when you do something well is beyond exciting! He believes I can do things before I can. He never makes me feel like I can’t, always that I can. I love the confidence he has given me with pole. He has shown me you can be any type of person, just give it a go and don’t be afraid to believe you can.\" Alice"
+        },
+        {
+          "name": "EMMA RULE",
+          "role": "Burlesque Instructor",
+          "photo": {
+            "url": "https://static.wixstatic.com/media/b963c7_cf0ea1eb17a44e1ba305dacf821c332c~mv2.jpg",
+            "html_alt": "IMG-20210723-WA0002.jpg",
+            "source_size": {
+              "width": 683,
+              "height": 1024
+            }
+          },
+          "bio": "Emma joined Cherry Dance in 2018 and has attended every burlesque class and performed in every cabaret show. She has been teaching burlesque since 2020 and is currently training for her aerial hoop teacher’s qualification.",
+          "quote": null
+        }
+      ]
+    },
+    "wedding_dances": {
+      "url": "https://www.cherry-dance.com/wedding-dances",
+      "title": "WEDDING DANCES | cherrydance",
+      "meta_description": "I can teach you a wedding dance for your day",
+      "heading": "WEDDING DANCES",
+      "slideshow": {
+        "autoplay": true,
+        "transition": "CrossFade",
+        "slides": [
+          {
+            "title": "wedding 1",
+            "text": [
+              "Make your big day extra special...",
+              "Whether you want to surprise your guests and break out into something wild or whether you would just like help to build the confidence to get up for that first dance...Cherry Dance offers something for everyone!"
+            ],
+            "content_photo": {
+              "url": "https://static.wixstatic.com/media/b963c7_aba9e5d271fa41b0a338c9449dddf250~mv2.jpg",
+              "source_size": {
+                "width": 720,
+                "height": 479
+              }
+            },
+            "decorative_stock_photo": {
+              "url": "https://static.wixstatic.com/media/035244_adff98f0ada74c3ab29ca158cb20bce8.jpg",
+              "wix_title": "bigstock-close-up-wooden-cut-texture-16723160.jpg",
+              "source_size": {
+                "width": 4176,
+                "height": 4224
+              },
+              "crop": {
+                "x": 1288,
+                "y": 911,
+                "width": 1607,
+                "height": 2402
+              },
+              "filter": "kennedy (desaturate / grayscale)",
+              "note": "Wix/Bigstock wood-grain texture used as a slide decoration, not a studio photo. URL recorded; not downloaded."
+            }
+          },
+          {
+            "title": "wedding 4",
+            "text": [],
+            "content_photo": {
+              "url": "https://static.wixstatic.com/media/b963c7_c5927231cda14dbea9340753fca1cb49~mv2.jpg",
+              "source_size": {
+                "width": 960,
+                "height": 640
+              }
+            },
+            "decorative_stock_photo": {
+              "url": "https://static.wixstatic.com/media/035244_1b788dd6f1234909896ac96dc72cd8d2.jpg",
+              "wix_title": "shutterstock_187830401_2final.jpg",
+              "source_size": {
+                "width": 3766,
+                "height": 3503
+              },
+              "crop": {
+                "x": 963,
+                "y": 403,
+                "width": 1416,
+                "height": 2401
+              },
+              "filter": "ink then desaturate",
+              "note": "Shutterstock texture used as a slide decoration, not a studio photo. URL recorded; not downloaded."
+            }
+          },
+          {
+            "title": "wedding 2",
+            "text": [
+              "Your First Dance",
+              "Get a personal touch...",
+              "Cheryl will work with you to achieve what you would like!",
+              "Sessions are £20 ph (+ travel/studio hire if required)",
+              "Sessions are flexible, bookable around you!"
+            ],
+            "content_photo": {
+              "url": "https://static.wixstatic.com/media/b963c7_0334d8cdc51b4d89b65eff47b087a942~mv2.jpg",
+              "source_size": {
+                "width": 720,
+                "height": 593
+              },
+              "also_used_as": "Left tile on /wedding-dances-and-parties, linking to this page"
+            },
+            "decorative_stock_photo": {
+              "url": "https://static.wixstatic.com/media/a500fb6c6734679bc1e57eb668e45d91.jpg",
+              "wix_title": "Desert Dune Crop",
+              "source_size": {
+                "width": 635,
+                "height": 295
+              },
+              "crop": {
+                "x": 19,
+                "y": 0,
+                "width": 173,
+                "height": 295
+              },
+              "filter": "ink then desaturate",
+              "note": "Wix desert-dune texture used as a slide decoration, not a studio photo. URL recorded; not downloaded."
+            }
+          }
+        ]
+      },
+      "reviews_heading": "REVIEWS",
+      "reviews": [
+        {
+          "text": "\"Cheryl is a fabulous versatile dancer. I have sat in and watched her street dance class she does with the children and she is completely encouraging and empathic to all the students, I've done a few of her classes myself and had a few giggles! But what I want to thank her for was her fantastic help when my husband and I came to her to choreograph a show dance for our first dance at our wedding. She totally went over and above to help us and made us a fantastic routine, that we didn't forget, and it made our wedding extra special!! All of our guests loved it xx\"",
+          "attribution": "-Georgie & Stuart Hedges"
+        }
+      ]
+    },
+    "hen_parties": {
+      "url": "https://www.cherry-dance.com/hen-parties",
+      "title": "HEN PARTIES  | cherrydance",
+      "meta_description": "hen parties availble to hire here",
+      "eyebrow": "Adult Parties & Hen Parties",
+      "slideshow": {
+        "autoplay": true,
+        "transition": "SlideHorizontal",
+        "note": "Package copy is text overlaid on three slideshow photos. There are no separate package product shots.",
+        "slides": [
+          {
+            "title": "Slide 1",
+            "photo": {
+              "url": "https://static.wixstatic.com/media/b963c7_efeeb14c2f9e495498130eb2eda05cd0~mv2.jpg",
+              "wix_title": "FB_IMG_1623424626383_edited.jpg",
+              "alt": "FB_IMG_1623424626383_edited.jpg",
+              "source_size": {
+                "width": 968,
+                "height": 701
+              }
+            },
+            "heading": "Hen Parties",
+            "text": "Choose from one of our amazing hen party packages, if you have any special requests to make your party more personal please don't hesitate to get in touch!",
+            "button": {
+              "label": "Get in Touch",
+              "url": "https://www.cherry-dance.com/contact"
+            }
+          },
+          {
+            "title": "Slide 2",
+            "photo": {
+              "url": "https://static.wixstatic.com/media/b963c7_a397798d4c944c4bb7467d7e9fc35ded~mv2.jpg",
+              "wix_title": "kylie hen.5.jpg",
+              "source_size": {
+                "width": 960,
+                "height": 609
+              }
+            },
+            "heading": "Packages",
+            "packages": [
+              {
+                "name": "POLE",
+                "text": "Pole Fitness Class: £10 per person for 1 hour. £15 per person for 1 hour and a half."
+              },
+              {
+                "name": "BURLESQUE",
+                "text": "Burlesque Class: £10 per person for 1 hour."
+              },
+              {
+                "name": "ANN SUMMERS",
+                "text": "Ann Summers Party: £20 venue fee. £5 per person. 2 hours."
+              },
+              {
+                "name": "HEN PARTY PACKAGE 1",
+                "text": "Pole Fitness Class, Burlesque Class and photo shoot dress up burlesque style and have your photos taken by a professional photographer. Inc 6 photos. More available at extra cost. £250. (burlesque outfits provided, 2x Bottles of Bubbles) Duration is 2 hours."
+              },
+              {
+                "name": "HEN PARTY PACKAGE 2",
+                "text": "Burlesque Class, Hair & Make-up, Dress up burlesque style Photo Shoot. Inc 6 photos. More available at extra cost. £350. (burlesque outfits provided, 2x Bottle of Bubbles) Duration 2-3 hours."
+              }
+            ]
+          },
+          {
+            "title": "Slide 3",
+            "photo": {
+              "url": "https://static.wixstatic.com/media/b963c7_e0158ad49fda442a99cfc686c1f57ff5~mv2.jpg",
+              "wix_title": "pole.1.jpg",
+              "source_size": {
+                "width": 640,
+                "height": 960
+              }
+            },
+            "heading": "And more...",
+            "text": "DESIGN YOUR OWN PACKAGE!\nNot found exactly what you are looking for? Why not contact Cheryl with your ideas and work out a personalised package for your Hen Party!",
+            "button": {
+              "label": "Get in Touch",
+              "url": "https://www.cherry-dance.com/contact"
+            }
+          }
+        ]
+      },
+      "reviews_heading": "Reviews",
+      "reviews": [
+        "\"I had a very enjoyable hen party with Cherry Dance, Cheryl was very accommodating and had lots of great ideas to make the experience really special! We had a Pole Fitness party followed by an Ann Summers party...it was a lot of fun!! I would highly recommend Cheryl! \"- Juliet Jones",
+        "\"I wasn't sure what to expect for my hen party as there were so many of us girls -22 to be precise, but it was fabulous! We learnt the Argentine Tango, we were shown lifts and given 'performance tips' not that I would ever have the guts to perfom it...we all loved it - Thankyou Cherry x\"",
+        "\"I booked the burlesque class for my hen party with Cherry Dance, we were taught how to take off gloves whilst looking sexy and had such fun, it was a laugh! She even let me keep the feather boa :)\"",
+        "\"Pole Fitness Hen Party was great! Fun time had by all, great photos and lots of laughter! Would recommend x\""
+      ]
+    },
+    "wedding_dances_and_parties_hub": {
+      "url": "https://www.cherry-dance.com/wedding-dances-and-parties",
+      "title": "WEDDING DANCES & HEN PARTIES | cherrydance",
+      "meta_description": "Hen parties, kids parties, learn a wedding dance",
+      "heading": "WEDDING DANCES & HEN PARTIES",
+      "useful": "Light hub: heading plus a two-tile gallery. No extra body copy.",
+      "gallery": [
+        {
+          "url": "https://static.wixstatic.com/media/b963c7_0334d8cdc51b4d89b65eff47b087a942~mv2.jpg",
+          "links_to": "https://www.cherry-dance.com/wedding-dances",
+          "note": "Same file as wedding slideshow slide 'wedding 2' content photo. One download covers both."
+        },
+        {
+          "url": "https://static.wixstatic.com/media/b963c7_d29d41f0b20b4259b3394e6fbe9529d4~mv2.jpg",
+          "links_to": "https://www.cherry-dance.com/hen-parties",
+          "note": "Unique hen-party group photo. No title or alt in the gallery markup."
+        }
+      ]
+    }
+  },
+  "photo_urls": {
+    "branding": [
+      {
+        "role": "logo",
+        "url": "https://static.wixstatic.com/media/b963c7_1537f227774c474bb95d9148c7ea8572~mv2.png"
+      },
+      {
+        "role": "splash_background",
+        "url": "https://static.wixstatic.com/media/b963c7_2ac118c919ed45f29f6075e79382d28a~mv2.jpg"
+      },
+      {
+        "role": "og_share_image",
+        "url": "https://static.wixstatic.com/media/b963c7_e4ab518d6a9b8388a75187309822d59f.jpg"
+      }
+    ],
+    "instructors": [
+      "https://static.wixstatic.com/media/b963c7_5a4f0c9d38909246338e58fb21c833f1.jpg",
+      "https://static.wixstatic.com/media/b963c7_78b3ec19eddd4a94a2def32d4885c582~mv2.jpg",
+      "https://static.wixstatic.com/media/b963c7_cf0ea1eb17a44e1ba305dacf821c332c~mv2.jpg"
+    ],
+    "wedding_slideshow_content": [
+      "https://static.wixstatic.com/media/b963c7_aba9e5d271fa41b0a338c9449dddf250~mv2.jpg",
+      "https://static.wixstatic.com/media/b963c7_c5927231cda14dbea9340753fca1cb49~mv2.jpg",
+      "https://static.wixstatic.com/media/b963c7_0334d8cdc51b4d89b65eff47b087a942~mv2.jpg"
+    ],
+    "wedding_slideshow_decorative_stock_not_downloaded": [
+      "https://static.wixstatic.com/media/035244_adff98f0ada74c3ab29ca158cb20bce8.jpg",
+      "https://static.wixstatic.com/media/035244_1b788dd6f1234909896ac96dc72cd8d2.jpg",
+      "https://static.wixstatic.com/media/a500fb6c6734679bc1e57eb668e45d91.jpg"
+    ],
+    "hen_slideshow": [
+      "https://static.wixstatic.com/media/b963c7_efeeb14c2f9e495498130eb2eda05cd0~mv2.jpg",
+      "https://static.wixstatic.com/media/b963c7_a397798d4c944c4bb7467d7e9fc35ded~mv2.jpg",
+      "https://static.wixstatic.com/media/b963c7_e0158ad49fda442a99cfc686c1f57ff5~mv2.jpg"
+    ],
+    "hub_gallery": [
+      "https://static.wixstatic.com/media/b963c7_0334d8cdc51b4d89b65eff47b087a942~mv2.jpg",
+      "https://static.wixstatic.com/media/b963c7_d29d41f0b20b4259b3394e6fbe9529d4~mv2.jpg"
+    ],
+    "not_content_skipped": [
+      {
+        "role": "facebook_icon",
+        "url": "https://static.wixstatic.com/media/ce6ec7c11b174c0581e20f42bb865ce3.png"
+      },
+      {
+        "role": "instagram_icon",
+        "url": "https://static.wixstatic.com/media/fdcfaba150fc427da298a00cb09d91c1.png"
+      },
+      {
+        "role": "google_play_badge",
+        "url": "https://static.wixstatic.com/media/b963c7_802690dffc1c446f9dafd9c6d26e4eb5~mv2.webp"
+      }
+    ]
+  },
+  "images_downloaded": [
+    {
+      "filename": "logo-cherry-dance-transparent.png",
+      "path": "/workspace/cherry-assets/images/logo-cherry-dance-transparent.png",
+      "bytes": 76922,
+      "role": "logo",
+      "source_url": "https://static.wixstatic.com/media/b963c7_1537f227774c474bb95d9148c7ea8572~mv2.png",
+      "pixels": {
+        "width": 842,
+        "height": 595
+      }
+    },
+    {
+      "filename": "splash-black-splat-background.jpg",
+      "path": "/workspace/cherry-assets/images/splash-black-splat-background.jpg",
+      "bytes": 252656,
+      "role": "splash",
+      "source_url": "https://static.wixstatic.com/media/b963c7_2ac118c919ed45f29f6075e79382d28a~mv2.jpg",
+      "pixels": {
+        "width": 1024,
+        "height": 768
+      }
+    },
+    {
+      "filename": "og-share-image.jpg",
+      "path": "/workspace/cherry-assets/images/og-share-image.jpg",
+      "bytes": 53260,
+      "role": "og_share",
+      "source_url": "https://static.wixstatic.com/media/b963c7_e4ab518d6a9b8388a75187309822d59f.jpg",
+      "pixels": {
+        "width": 477,
+        "height": 477
+      }
+    },
+    {
+      "filename": "instructor-cheryl-cooper.jpg",
+      "path": "/workspace/cherry-assets/images/instructor-cheryl-cooper.jpg",
+      "bytes": 16684,
+      "role": "instructor Cheryl Cooper",
+      "source_url": "https://static.wixstatic.com/media/b963c7_5a4f0c9d38909246338e58fb21c833f1.jpg",
+      "pixels": {
+        "width": 280,
+        "height": 373
+      }
+    },
+    {
+      "filename": "instructor-carl-halstad.jpg",
+      "path": "/workspace/cherry-assets/images/instructor-carl-halstad.jpg",
+      "bytes": 343019,
+      "role": "instructor Carl Halstad",
+      "source_url": "https://static.wixstatic.com/media/b963c7_78b3ec19eddd4a94a2def32d4885c582~mv2.jpg",
+      "pixels": {
+        "width": 1511,
+        "height": 2015
+      }
+    },
+    {
+      "filename": "instructor-emma-rule.jpg",
+      "path": "/workspace/cherry-assets/images/instructor-emma-rule.jpg",
+      "bytes": 90285,
+      "role": "instructor Emma Rule",
+      "source_url": "https://static.wixstatic.com/media/b963c7_cf0ea1eb17a44e1ba305dacf821c332c~mv2.jpg",
+      "pixels": {
+        "width": 683,
+        "height": 1024
+      }
+    },
+    {
+      "filename": "wedding-slideshow-photo-1.jpg",
+      "path": "/workspace/cherry-assets/images/wedding-slideshow-photo-1.jpg",
+      "bytes": 30964,
+      "role": "wedding slide wedding 1 content photo",
+      "source_url": "https://static.wixstatic.com/media/b963c7_aba9e5d271fa41b0a338c9449dddf250~mv2.jpg",
+      "pixels": {
+        "width": 720,
+        "height": 479
+      }
+    },
+    {
+      "filename": "wedding-slideshow-photo-2.jpg",
+      "path": "/workspace/cherry-assets/images/wedding-slideshow-photo-2.jpg",
+      "bytes": 83191,
+      "role": "wedding slide wedding 4 content photo",
+      "source_url": "https://static.wixstatic.com/media/b963c7_c5927231cda14dbea9340753fca1cb49~mv2.jpg",
+      "pixels": {
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "filename": "wedding-slideshow-photo-3-also-hub-tile.jpg",
+      "path": "/workspace/cherry-assets/images/wedding-slideshow-photo-3-also-hub-tile.jpg",
+      "bytes": 39865,
+      "role": "wedding slide wedding 2 photo and hub wedding tile",
+      "source_url": "https://static.wixstatic.com/media/b963c7_0334d8cdc51b4d89b65eff47b087a942~mv2.jpg",
+      "pixels": {
+        "width": 720,
+        "height": 593
+      }
+    },
+    {
+      "filename": "hen-slideshow-studio.jpg",
+      "path": "/workspace/cherry-assets/images/hen-slideshow-studio.jpg",
+      "bytes": 96327,
+      "role": "hen slide 1 studio photo",
+      "source_url": "https://static.wixstatic.com/media/b963c7_efeeb14c2f9e495498130eb2eda05cd0~mv2.jpg",
+      "pixels": {
+        "width": 968,
+        "height": 701
+      }
+    },
+    {
+      "filename": "hen-slideshow-kylie.jpg",
+      "path": "/workspace/cherry-assets/images/hen-slideshow-kylie.jpg",
+      "bytes": 47252,
+      "role": "hen slide 2 kylie hen.5.jpg",
+      "source_url": "https://static.wixstatic.com/media/b963c7_a397798d4c944c4bb7467d7e9fc35ded~mv2.jpg",
+      "pixels": {
+        "width": 960,
+        "height": 609
+      }
+    },
+    {
+      "filename": "hen-slideshow-pole.jpg",
+      "path": "/workspace/cherry-assets/images/hen-slideshow-pole.jpg",
+      "bytes": 58165,
+      "role": "hen slide 3 pole.1.jpg",
+      "source_url": "https://static.wixstatic.com/media/b963c7_e0158ad49fda442a99cfc686c1f57ff5~mv2.jpg",
+      "pixels": {
+        "width": 640,
+        "height": 960
+      }
+    },
+    {
+      "filename": "hub-hen-party-tile.jpg",
+      "path": "/workspace/cherry-assets/images/hub-hen-party-tile.jpg",
+      "bytes": 72765,
+      "role": "hub hen party gallery tile",
+      "source_url": "https://static.wixstatic.com/media/b963c7_d29d41f0b20b4259b3394e6fbe9529d4~mv2.jpg",
+      "pixels": {
+        "width": 1080,
+        "height": 720
+      }
+    }
+  ],
+  "images_downloaded_count": 13,
+  "unique_content_photo_urls": 13,
+  "not_downloaded": [
+    "3 wedding slideshow decorative stock textures (wood grain, shutterstock, desert dune) — URLs are in photo_urls.wedding_slideshow_decorative_stock_not_downloaded",
+    "Facebook and Instagram icon sprites",
+    "Google Play store badge"
+  ]
+}
