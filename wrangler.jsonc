@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cherry",
+  "account_id": "f027194dcc0be7e3812e673468bab58d",
+  "compatibility_date": "2026-09-13",
+  "compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "routes": [{ "pattern": "cherry.cybush.uk/*", "zone_name": "cybush.uk" }],
+  "vars": { "CLOUDFLARE_WORKER": "1" },
+  "kv_namespaces": [
+    {
+      "binding": "SITE_CONTENT",
+      "id": "108b76dd196c4a1793bc4f22f269f0f9"
+    }
+  ]
+}
