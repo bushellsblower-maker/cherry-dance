@@ -51,6 +51,22 @@ export const HenPackageSchema = z.object({
 });
 export type HenPackage = z.infer<typeof HenPackageSchema>;
 
+export const ReviewSchema = z.object({
+  text: z.string().min(1),
+  by: z.string().optional(),
+});
+export type Review = z.infer<typeof ReviewSchema>;
+
+export const InstructorSchema = z.object({
+  name: z.string().min(1),
+  role: z.string().min(1),
+  photo: z.string().min(1),
+  bio: z.string().min(1),
+  quote: z.string().optional(),
+  quoteBy: z.string().optional(),
+});
+export type Instructor = z.infer<typeof InstructorSchema>;
+
 export const SiteContentSchema = z.object({
   hero: z.object({
     eyebrow: z.string(),
@@ -84,11 +100,22 @@ export const SiteContentSchema = z.object({
   henParties: z.object({
     heading: z.string(),
     intro: z.string(),
+    designOwn: z.string(),
     designNote: z.string(),
     contactLabel: z.string(),
     pageUrl: z.string(),
     pageLabel: z.string(),
+    heroImage: z.string(),
     packages: z.array(HenPackageSchema),
+    reviews: z.array(ReviewSchema),
+  }),
+  wedding: z.object({
+    heading: z.string(),
+    intro: z.string(),
+    pageUrl: z.string(),
+    pageLabel: z.string(),
+    photos: z.array(z.string()),
+    review: ReviewSchema,
   }),
   socials: z.object({
     facebook: z.string(),
@@ -116,12 +143,9 @@ export const SiteContentSchema = z.object({
   instructors: z.object({
     heading: z.string(),
     note: z.string(),
-    people: z.array(
-      z.object({
-        name: z.string(),
-        role: z.string(),
-      }),
-    ),
+    pageUrl: z.string(),
+    pageLabel: z.string(),
+    people: z.array(InstructorSchema),
   }),
   ctas: z.object({
     book: z.string(),
@@ -129,6 +153,7 @@ export const SiteContentSchema = z.object({
     shows: z.string(),
     tickets: z.string(),
     hens: z.string(),
+    wedding: z.string(),
   }),
 });
 export type SiteContent = z.infer<typeof SiteContentSchema>;

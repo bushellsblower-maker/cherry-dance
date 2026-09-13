@@ -101,12 +101,14 @@
     ]
   },
   "henParties": {
-    "heading": "Hen & adult parties",
-    "intro": "Adult parties and hen parties at the Eastbourne studios. Design your own package, or choose one of the published packages below.",
+    "heading": "Adult Parties & Hen Parties",
+    "intro": "Choose from one of our amazing hen party packages, if you have any special requests to make your party more personal please don't hesitate to get in touch!",
+    "designOwn": "DESIGN YOUR OWN PACKAGE!",
     "designNote": "Contact Cheryl to book, or if you have special requests to make the party more personal.",
     "contactLabel": "Contact Cheryl",
     "pageUrl": "https://www.cherry-dance.com/hen-parties",
     "pageLabel": "Hen parties page",
+    "heroImage": "/brand/hen-hero.jpg",
     "packages": [
       {
         "name": "Pole",
@@ -123,14 +125,45 @@
       {
         "name": "Package 1",
         "price": "£250 / 2 hours",
-        "includes": "Pole + burlesque + photoshoot (6 photos, outfits, 2 bottles of Bubbles)"
+        "includes": "pole + burlesque + photoshoot (6 photos, outfits, 2 bottles of Bubbles)"
       },
       {
         "name": "Package 2",
         "price": "£350 / 2–3 hours",
-        "includes": "Burlesque + hair & makeup + photoshoot"
+        "includes": "burlesque + hair & makeup + photoshoot"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "I had a very enjoyable hen party with Cherry Dance, Cheryl was very accommodating and had lots of great ideas to make the experience really special! We had a Pole Fitness party followed by an Ann Summers party...it was a lot of fun!! I would highly recommend Cheryl!",
+        "by": "Juliet Jones"
+      },
+      {
+        "text": "I wasn't sure what to expect for my hen party as there were so many of us girls -22 to be precise, but it was fabulous! We learnt the Argentine Tango, we were shown lifts and given 'performance tips' not that I would ever have the guts to perform it...we all loved it - Thankyou Cherry x"
+      },
+      {
+        "text": "I booked the burlesque class for my hen party with Cherry Dance, we were taught how to take off gloves whilst looking sexy and had such fun, it was a laugh! She even let me keep the feather boa :)"
+      },
+      {
+        "text": "Pole Fitness Hen Party was great! Fun time had by all, great photos and lots of laughter! Would recommend x"
       }
     ]
+  },
+  "wedding": {
+    "heading": "Wedding Dances",
+    "intro": "Make your big day extra special... Whether you want to surprise your guests and break out into something wild or whether you would just like help to build the confidence to get up for that first dance... Cherry Dance offers something for everyone!",
+    "pageUrl": "https://www.cherry-dance.com/wedding-dances",
+    "pageLabel": "Wedding dances page",
+    "photos": [
+      "/brand/wedding-2.jpg",
+      "/brand/wedding-hen-hub-1.jpg",
+      "/brand/wedding-hen-hub-2.jpg",
+      "/brand/wedding-1.jpg"
+    ],
+    "review": {
+      "text": "Cheryl is a fabulous versatile dancer. I have sat in and watched her street dance class she does with the children and she is completely encouraging and empathic to all the students, I've done a few of her classes myself and had a few giggles! But what I want to thank her for was her fantastic help when my husband and I came to her to choreograph a show dance for our first dance at our wedding. She totally went over and above to help us and made us a fantastic routine, that we didn't forget, and it made our wedding extra special!! All of our guests loved it xx",
+      "by": "Georgie & Stuart Hedges"
+    }
   },
   "socials": {
     "facebook": "https://www.facebook.com/cherrydancestudio7",
@@ -266,19 +299,31 @@
   },
   "instructors": {
     "heading": "Instructors",
-    "note": "All Cherry Dance instructors are fully qualified, insured and first aid trained. Named here as published on the instructors page.",
+    "note": "All Cherry Dance instructors are fully qualified, insured and first aid trained.",
+    "pageUrl": "https://www.cherry-dance.com/instructors",
+    "pageLabel": "Instructors page",
     "people": [
       {
         "name": "Cheryl Cooper",
-        "role": "Founder"
+        "role": "Founder",
+        "photo": "/brand/instructor-cheryl.jpg",
+        "bio": "Cheryl is a highly qualified and experienced dance instructor and founded Cherry Dance in 2012. Her training and qualifications include: Bachelor of Arts Degree in Dance (Creative Academy, West London – choreography, Bollywood, breakdance, contemporary, release, commercial, street, ballet, pointe, pas de deux, yoga, stretch & flex, jazz, modern, stage combat and rapier and dagger); anatomy and physiology; PTTLS teaching qualification; Diploma in Dance Instruction Modern (ISTD); instructor qualifications in pole fitness (choreographer of award-winning Inter-University Pole Dancing Championship 2020), aerial hoop, pilates and fitness classes; children’s pole & aerial fitness. Cheryl is also trained in burlesque, boylesque, wedding dances, silks and body conditioning. Cheryl’s professional performances include Come Dine with Me (Sky One), Corporate Rudeye Dance Agency (O2 Arena), Corporate Glastonbury Festival and Got to Dance (Sky One). She also choreographed a medal-winning British Gymnastics Championship routine.",
+        "quote": "Cheryl is amazing... I have been going through a really hard time mentally and this beaut is helping me get back on track... There is no judgement and complete focus on what I want to achieve for myself.... She is pushing me physically and I'm loving it... She always stays to the level I am comfortable at unless she knows I'm wimping out lol.... Absolute fountain of knowledge. Such a welcoming environment. This woman builds people up with confidence and kindness.",
+        "quoteBy": "Rhiannon"
       },
       {
         "name": "Carl Halstad",
-        "role": "Pole Fitness Instructor"
+        "role": "Pole Fitness Instructor",
+        "photo": "/brand/instructor-carl.jpg",
+        "bio": "Carl is a qualified pole fitness instructor and has been teaching at Cherry Dance since 2019.",
+        "quote": "I’ve always been curious about pole, but never felt I had the body type for it. Carl has been incredible; he is supportive, encouraging and patient. His energy is infectious and the joy he shares with you when you do something well is beyond exciting! He believes I can do things before I can. He never makes me feel like I can’t, always that I can. I love the confidence he has given me with pole. He has shown me you can be any type of person, just give it a go and don’t be afraid to believe you can.",
+        "quoteBy": "Alice"
       },
       {
         "name": "Emma Rule",
-        "role": "Burlesque Instructor"
+        "role": "Burlesque Instructor",
+        "photo": "/brand/instructor-emma.jpg",
+        "bio": "Emma joined Cherry Dance in 2018 and has attended every burlesque class and performed in every cabaret show. She has been teaching burlesque since 2020 and is currently training for her aerial hoop teacher’s qualification."
       }
     ]
   },
@@ -287,6 +332,7 @@
     "shop": "Shop",
     "shows": "Upcoming shows",
     "tickets": "Get tickets",
-    "hens": "Hen parties"
+    "hens": "Hen parties",
+    "wedding": "Wedding dances"
   }
 }
