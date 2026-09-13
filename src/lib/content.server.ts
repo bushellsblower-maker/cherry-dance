@@ -29,6 +29,48 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
+const OLD_HEN_DESIGN_NOTE =
+  "Contact Cheryl to book, or if you have special requests to make the party more personal.";
+
+function pickText(value: unknown, fallback: string): string {
+  return typeof value === "string" && value.trim() ? value : fallback;
+}
+
+function stringList(value: unknown): string[] | null {
+  if (!Array.isArray(value) || !value.length) return null;
+  if (!value.every((entry) => typeof entry === "string" && entry)) return null;
+  return value as string[];
+}
+
+function hasWeddingContentPhotos(photos: unknown): boolean {
+  const list = stringList(photos);
+  return Boolean(
+    list?.includes("/brand/wedding-slideshow-2.jpg") &&
+      list.includes("/brand/wedding-2.jpg") &&
+      list.includes("/brand/wedding-hen-hub-1.jpg"),
+  );
+}
+
+function hasHenSlideshowPhotos(photos: unknown): boolean {
+  const list = stringList(photos);
+  return Boolean(
+    list?.includes("/brand/hen-hero.jpg") &&
+      list.includes("/brand/hen-slideshow-kylie.jpg") &&
+      list.includes("/brand/hen-slideshow-pole.jpg"),
+  );
+}
+
+function hasFullHenPackages(packages: unknown): boolean {
+  if (!Array.isArray(packages) || !packages.length) return false;
+  return packages.some(
+    (entry) =>
+      isRecord(entry) &&
+      entry.name === "HEN PARTY PACKAGE 1" &&
+      typeof entry.includes === "string" &&
+      entry.includes.includes("£250"),
+  );
+}
+
 function mergeNamedPeople(
   seedPeople: SiteContent["instructors"]["people"],
   stored: unknown,
@@ -88,7 +130,7 @@ function hydrateContent(stored: unknown): SiteContent {
     henParties: {
       ...base.henParties,
       ...(isRecord(stored.henParties) ? stored.henParties : {}),
-      packages: Array.isArray(
+      packages: hasFullHenPackages(
         isRecord(stored.henParties) ? stored.henParties.packages : null,
       )
         ? (stored.henParties as SiteContent["henParties"]).packages
@@ -98,28 +140,55 @@ function hydrateContent(stored: unknown): SiteContent {
       ) && (stored.henParties as { reviews: unknown[] }).reviews.length
         ? (stored.henParties as SiteContent["henParties"]).reviews
         : base.henParties.reviews,
-      heroImage:
+      heroImage: pickText(
+        isRecord(stored.henParties) ? stored.henParties.heroImage : null,
+        base.henParties.heroImage,
+      ),
+      photos: hasHenSlideshowPhotos(
+        isRecord(stored.henParties) ? stored.henParties.photos : null,
+      )
+        ? (stored.henParties as SiteContent["henParties"]).photos
+        : base.henParties.photos,
+      designOwn: pickText(
+        isRecord(stored.henParties) ? stored.henParties.designOwn : null,
+        base.henParties.designOwn,
+      ),
+      designNote:
         isRecord(stored.henParties) &&
-        typeof stored.henParties.heroImage === "string" &&
-        stored.henParties.heroImage
-          ? stored.henParties.heroImage
-          : base.henParties.heroImage,
-      designOwn:
-        isRecord(stored.henParties) &&
-        typeof stored.henParties.designOwn === "string" &&
-        stored.henParties.designOwn
-          ? stored.henParties.designOwn
-          : base.henParties.designOwn,
+        typeof stored.henParties.designNote === "string" &&
+        stored.henParties.designNote &&
+        stored.henParties.designNote !== OLD_HEN_DESIGN_NOTE
+          ? stored.henParties.designNote
+          : base.henParties.designNote,
     },
     wedding: {
       ...base.wedding,
       ...(isRecord(stored.wedding) ? stored.wedding : {}),
-      photos:
-        isRecord(stored.wedding) &&
-        Array.isArray(stored.wedding.photos) &&
-        stored.wedding.photos.length
-          ? (stored.wedding.photos as string[])
-          : base.wedding.photos,
+      firstDanceTitle: pickText(
+        isRecord(stored.wedding) ? stored.wedding.firstDanceTitle : null,
+        base.wedding.firstDanceTitle,
+      ),
+      personalTouch: pickText(
+        isRecord(stored.wedding) ? stored.wedding.personalTouch : null,
+        base.wedding.personalTouch,
+      ),
+      personalNote: pickText(
+        isRecord(stored.wedding) ? stored.wedding.personalNote : null,
+        base.wedding.personalNote,
+      ),
+      sessionRate: pickText(
+        isRecord(stored.wedding) ? stored.wedding.sessionRate : null,
+        base.wedding.sessionRate,
+      ),
+      sessionNote: pickText(
+        isRecord(stored.wedding) ? stored.wedding.sessionNote : null,
+        base.wedding.sessionNote,
+      ),
+      photos: hasWeddingContentPhotos(
+        isRecord(stored.wedding) ? stored.wedding.photos : null,
+      )
+        ? (stored.wedding.photos as string[])
+        : base.wedding.photos,
       review: {
         ...base.wedding.review,
         ...(isRecord(stored.wedding) && isRecord(stored.wedding.review)

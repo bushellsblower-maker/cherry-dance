@@ -104,33 +104,38 @@
     "heading": "Adult Parties & Hen Parties",
     "intro": "Choose from one of our amazing hen party packages, if you have any special requests to make your party more personal please don't hesitate to get in touch!",
     "designOwn": "DESIGN YOUR OWN PACKAGE!",
-    "designNote": "Contact Cheryl to book, or if you have special requests to make the party more personal.",
+    "designNote": "Not found exactly what you are looking for? Why not contact Cheryl with your ideas and work out a personalised package for your Hen Party!",
     "contactLabel": "Contact Cheryl",
     "pageUrl": "https://www.cherry-dance.com/hen-parties",
     "pageLabel": "Hen parties page",
     "heroImage": "/brand/hen-hero.jpg",
+    "photos": [
+      "/brand/hen-hero.jpg",
+      "/brand/hen-slideshow-kylie.jpg",
+      "/brand/hen-slideshow-pole.jpg"
+    ],
     "packages": [
       {
-        "name": "Pole",
-        "price": "£10 pp / 1 hr or £15 pp / 1.5 hr"
+        "name": "POLE",
+        "price": "Pole Fitness Class: £10 per person for 1 hour. £15 per person for 1 hour and a half."
       },
       {
-        "name": "Burlesque",
-        "price": "£10 pp / 1 hr"
+        "name": "BURLESQUE",
+        "price": "Burlesque Class: £10 per person for 1 hour."
       },
       {
-        "name": "Ann Summers",
-        "price": "£20 venue fee + £5 pp, 2 hours"
+        "name": "ANN SUMMERS",
+        "price": "Ann Summers Party: £20 venue fee. £5 per person. 2 hours."
       },
       {
-        "name": "Package 1",
-        "price": "£250 / 2 hours",
-        "includes": "pole + burlesque + photoshoot (6 photos, outfits, 2 bottles of Bubbles)"
+        "name": "HEN PARTY PACKAGE 1",
+        "price": "£250",
+        "includes": "Pole Fitness Class, Burlesque Class and photo shoot dress up burlesque style and have your photos taken by a professional photographer. Inc 6 photos. More available at extra cost. £250. (burlesque outfits provided, 2x Bottles of Bubbles) Duration is 2 hours."
       },
       {
-        "name": "Package 2",
-        "price": "£350 / 2–3 hours",
-        "includes": "burlesque + hair & makeup + photoshoot"
+        "name": "HEN PARTY PACKAGE 2",
+        "price": "£350",
+        "includes": "Burlesque Class, Hair & Make-up, Dress up burlesque style Photo Shoot. Inc 6 photos. More available at extra cost. £350. (burlesque outfits provided, 2x Bottle of Bubbles) Duration 2-3 hours."
       }
     ],
     "reviews": [
@@ -151,14 +156,18 @@
   },
   "wedding": {
     "heading": "Wedding Dances",
-    "intro": "Make your big day extra special... Whether you want to surprise your guests and break out into something wild or whether you would just like help to build the confidence to get up for that first dance... Cherry Dance offers something for everyone!",
+    "intro": "Make your big day extra special... Whether you want to surprise your guests and break out into something wild or whether you would just like help to build the confidence to get up for that first dance...Cherry Dance offers something for everyone!",
+    "firstDanceTitle": "Your First Dance",
+    "personalTouch": "Get a personal touch...",
+    "personalNote": "Cheryl will work with you to achieve what you would like!",
+    "sessionRate": "Sessions are £20 ph (+ travel/studio hire if required)",
+    "sessionNote": "Sessions are flexible, bookable around you!",
     "pageUrl": "https://www.cherry-dance.com/wedding-dances",
     "pageLabel": "Wedding dances page",
     "photos": [
       "/brand/wedding-2.jpg",
-      "/brand/wedding-hen-hub-1.jpg",
-      "/brand/wedding-hen-hub-2.jpg",
-      "/brand/wedding-1.jpg"
+      "/brand/wedding-slideshow-2.jpg",
+      "/brand/wedding-hen-hub-1.jpg"
     ],
     "review": {
       "text": "Cheryl is a fabulous versatile dancer. I have sat in and watched her street dance class she does with the children and she is completely encouraging and empathic to all the students, I've done a few of her classes myself and had a few giggles! But what I want to thank her for was her fantastic help when my husband and I came to her to choreograph a show dance for our first dance at our wedding. She totally went over and above to help us and made us a fantastic routine, that we didn't forget, and it made our wedding extra special!! All of our guests loved it xx",
