@@ -6,7 +6,7 @@ export const Route = createFileRoute("/go-live")({
 
 function GoLivePage() {
   return (
-    <div className="min-h-dvh bg-cream">
+    <div className="cms-page min-h-dvh">
       <div className="wrap py-10">
         <Link to="/" className="text-sm text-cherry no-underline">
           ← Back to site

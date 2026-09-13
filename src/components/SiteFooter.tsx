@@ -4,17 +4,18 @@ import type { SiteContent } from "@/lib/content";
 
 export function SiteFooter({ content }: { content: SiteContent }) {
   return (
-    <footer className="border-t border-cherry/10 bg-cream-deep/70">
-      <div className="wrap grid gap-8 py-12 md:grid-cols-3">
+    <footer className="border-t border-white/10 bg-ink">
+      <div className="wrap grid gap-6 py-8 md:grid-cols-3">
         <div>
-          <BrandLogo className="h-12" />
-          <p className="mt-3 max-w-xs text-sm text-ink-soft">
+          <BrandLogo onDark className="h-16" />
+          <p className="mt-2 max-w-xs text-sm text-ink-soft">
             Dance and fitness classes in central Eastbourne. Founded in 2012 by
             Cheryl Cooper.
           </p>
+          <p className="mt-2 text-xs text-gold-dust">{content.instructors.note}</p>
         </div>
         <div className="text-sm">
-          <p className="font-semibold">Studio</p>
+          <p className="font-semibold text-cream">Studio</p>
           <a className="mt-2 block text-ink-soft" href={content.socials.facebook}>
             Facebook
           </a>
@@ -27,12 +28,15 @@ export function SiteFooter({ content }: { content: SiteContent }) {
           <a className="mt-1 block text-ink-soft" href={content.shop.url}>
             Shop on Clothing Kings
           </a>
+          <a className="mt-1 block text-ink-soft" href="/#wedding">
+            Wedding dances
+          </a>
           <a className="mt-1 block text-ink-soft" href="/#parties">
             Hen &amp; adult parties
           </a>
         </div>
         <div className="text-sm">
-          <p className="font-semibold">Cabaret Cerises</p>
+          <p className="font-semibold text-cream">Cabaret Cerises</p>
           <a className="mt-2 block text-ink-soft" href={content.cabaret.facebook}>
             Performance Facebook
           </a>

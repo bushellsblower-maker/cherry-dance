@@ -3,35 +3,35 @@ import type { SiteContent } from "@/lib/content";
 
 export function Socials({ content }: { content: SiteContent }) {
   return (
-    <section id="socials" className="scroll-mt-24 py-12">
+    <section id="socials" className="section-block scroll-mt-20">
       <div className="wrap">
-        <h2 className="font-display text-3xl sm:text-4xl">Stay in the studio loop</h2>
-        <p className="mt-3 max-w-xl text-ink-soft">
+        <h2 className="font-display text-2xl text-cream sm:text-3xl">Stay in the studio loop</h2>
+        <p className="mt-2 max-w-xl text-sm text-ink-soft">
           Cherry Dance on Facebook and Instagram. Cabaret Cerises has its own
           performance accounts in the cabaret section above.
         </p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="mt-4 grid gap-2.5 sm:grid-cols-2">
           <a
             href={content.socials.facebook}
-            className="flex items-center gap-4 rounded-3xl bg-white p-5 no-underline shadow-sm ring-1 ring-cherry/10 transition hover:-translate-y-1"
+            className="card flex items-center gap-3 no-underline transition hover:-translate-y-0.5"
           >
-            <span className="grid h-12 w-12 place-items-center rounded-full bg-petal text-cherry">
-              <Facebook />
+            <span className="grid h-10 w-10 place-items-center rounded-full bg-cherry text-white">
+              <Facebook size={18} />
             </span>
             <span>
-              <strong className="block">Facebook</strong>
+              <strong className="block text-cream">Facebook</strong>
               <span className="text-sm text-muted">cherrydancestudio7</span>
             </span>
           </a>
           <a
             href={content.socials.instagram}
-            className="flex items-center gap-4 rounded-3xl bg-white p-5 no-underline shadow-sm ring-1 ring-cherry/10 transition hover:-translate-y-1"
+            className="card flex items-center gap-3 no-underline transition hover:-translate-y-0.5"
           >
-            <span className="grid h-12 w-12 place-items-center rounded-full bg-petal text-cherry">
-              <Instagram />
+            <span className="grid h-10 w-10 place-items-center rounded-full bg-cherry text-white">
+              <Instagram size={18} />
             </span>
             <span>
-              <strong className="block">Instagram</strong>
+              <strong className="block text-cream">Instagram</strong>
               <span className="text-sm text-muted">@cherry_dance</span>
             </span>
           </a>

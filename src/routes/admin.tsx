@@ -72,7 +72,7 @@ function AdminPage() {
       setDraft(result.content);
       setPersistence(result.persistence);
       setUpdatedAt(result.updatedAt);
-      setStatus("Reset to research-pack seed.");
+      setStatus("Reset to seed content.");
     } catch (error) {
       setStatus(error instanceof Error ? error.message : "Reset failed.");
     } finally {
@@ -81,7 +81,7 @@ function AdminPage() {
   }
 
   return (
-    <div className="min-h-dvh bg-cream">
+    <div className="cms-page min-h-dvh">
       <div className="border-b border-amber-300 bg-amber-100 px-4 py-3 text-center text-sm font-semibold text-amber-950">
         Demo CMS — no authentication yet. Do not put real secrets here. Anyone
         who can open /admin can edit.
@@ -290,6 +290,13 @@ function AdminPage() {
               setDraft({ ...draft, ctas: { ...draft.ctas, hens: value } })
             }
           />
+          <Field
+            label="Wedding dances CTA label"
+            value={draft.ctas.wedding}
+            onChange={(value) =>
+              setDraft({ ...draft, ctas: { ...draft.ctas, wedding: value } })
+            }
+          />
           <TextArea
             label="Booking body"
             value={draft.booking.body}
@@ -381,6 +388,26 @@ function AdminPage() {
               })
             }
           />
+          <Field
+            label="Hero image path"
+            value={draft.henParties.heroImage}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: { ...draft.henParties, heroImage: value },
+              })
+            }
+          />
+          <Field
+            label="Design-your-own heading"
+            value={draft.henParties.designOwn}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: { ...draft.henParties, designOwn: value },
+              })
+            }
+          />
           {draft.henParties.packages.map((pack, index) => (
             <div key={`${pack.name}-${index}`} className="mt-4 rounded-2xl bg-cream p-4">
               <Field
@@ -416,6 +443,237 @@ function AdminPage() {
                   setDraft({
                     ...draft,
                     henParties: { ...draft.henParties, packages },
+                  });
+                }}
+              />
+            </div>
+          ))}
+          {draft.henParties.reviews.map((review, index) => (
+            <div key={`hen-review-${index}`} className="mt-4 rounded-2xl bg-cream p-4">
+              <TextArea
+                label="Hen review"
+                value={review.text}
+                onChange={(value) => {
+                  const reviews = draft.henParties.reviews.slice();
+                  reviews[index] = { ...review, text: value };
+                  setDraft({
+                    ...draft,
+                    henParties: { ...draft.henParties, reviews },
+                  });
+                }}
+              />
+              <Field
+                label="Attribution (optional)"
+                value={review.by ?? ""}
+                onChange={(value) => {
+                  const reviews = draft.henParties.reviews.slice();
+                  reviews[index] = { ...review, by: value || undefined };
+                  setDraft({
+                    ...draft,
+                    henParties: { ...draft.henParties, reviews },
+                  });
+                }}
+              />
+            </div>
+          ))}
+        </section>
+
+        <section className="mt-6 rounded-3xl bg-white p-5 ring-1 ring-cherry/10">
+          <h2 className="font-display text-2xl">Wedding dances</h2>
+          <Field
+            label="Heading"
+            value={draft.wedding.heading}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, heading: value },
+              })
+            }
+          />
+          <TextArea
+            label="Intro"
+            value={draft.wedding.intro}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, intro: value },
+              })
+            }
+          />
+          <Field
+            label="Original page URL"
+            value={draft.wedding.pageUrl}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, pageUrl: value },
+              })
+            }
+          />
+          <Field
+            label="Page CTA label"
+            value={draft.wedding.pageLabel}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, pageLabel: value },
+              })
+            }
+          />
+          <TextArea
+            label="Photo paths (one per line)"
+            value={draft.wedding.photos.join("\n")}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: {
+                  ...draft.wedding,
+                  photos: value.split("\n").filter(Boolean),
+                },
+              })
+            }
+          />
+          <TextArea
+            label="Review"
+            value={draft.wedding.review.text}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: {
+                  ...draft.wedding,
+                  review: { ...draft.wedding.review, text: value },
+                },
+              })
+            }
+          />
+          <Field
+            label="Review by"
+            value={draft.wedding.review.by ?? ""}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: {
+                  ...draft.wedding,
+                  review: { ...draft.wedding.review, by: value || undefined },
+                },
+              })
+            }
+          />
+        </section>
+
+        <section className="mt-6 rounded-3xl bg-white p-5 ring-1 ring-cherry/10">
+          <h2 className="font-display text-2xl">Instructors</h2>
+          <Field
+            label="Heading"
+            value={draft.instructors.heading}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                instructors: { ...draft.instructors, heading: value },
+              })
+            }
+          />
+          <TextArea
+            label="Qualified / insured footer"
+            value={draft.instructors.note}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                instructors: { ...draft.instructors, note: value },
+              })
+            }
+          />
+          <Field
+            label="Original page URL"
+            value={draft.instructors.pageUrl}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                instructors: { ...draft.instructors, pageUrl: value },
+              })
+            }
+          />
+          <Field
+            label="Page CTA label"
+            value={draft.instructors.pageLabel}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                instructors: { ...draft.instructors, pageLabel: value },
+              })
+            }
+          />
+          {draft.instructors.people.map((person, index) => (
+            <div key={person.name} className="mt-4 rounded-2xl bg-cream p-4">
+              <Field
+                label="Name"
+                value={person.name}
+                onChange={(value) => {
+                  const people = draft.instructors.people.slice();
+                  people[index] = { ...person, name: value };
+                  setDraft({
+                    ...draft,
+                    instructors: { ...draft.instructors, people },
+                  });
+                }}
+              />
+              <Field
+                label="Role"
+                value={person.role}
+                onChange={(value) => {
+                  const people = draft.instructors.people.slice();
+                  people[index] = { ...person, role: value };
+                  setDraft({
+                    ...draft,
+                    instructors: { ...draft.instructors, people },
+                  });
+                }}
+              />
+              <Field
+                label="Photo path"
+                value={person.photo}
+                onChange={(value) => {
+                  const people = draft.instructors.people.slice();
+                  people[index] = { ...person, photo: value };
+                  setDraft({
+                    ...draft,
+                    instructors: { ...draft.instructors, people },
+                  });
+                }}
+              />
+              <TextArea
+                label="Bio"
+                value={person.bio}
+                onChange={(value) => {
+                  const people = draft.instructors.people.slice();
+                  people[index] = { ...person, bio: value };
+                  setDraft({
+                    ...draft,
+                    instructors: { ...draft.instructors, people },
+                  });
+                }}
+              />
+              <TextArea
+                label="Student quote (optional)"
+                value={person.quote ?? ""}
+                onChange={(value) => {
+                  const people = draft.instructors.people.slice();
+                  people[index] = { ...person, quote: value || undefined };
+                  setDraft({
+                    ...draft,
+                    instructors: { ...draft.instructors, people },
+                  });
+                }}
+              />
+              <Field
+                label="Quote by (optional)"
+                value={person.quoteBy ?? ""}
+                onChange={(value) => {
+                  const people = draft.instructors.people.slice();
+                  people[index] = { ...person, quoteBy: value || undefined };
+                  setDraft({
+                    ...draft,
+                    instructors: { ...draft.instructors, people },
                   });
                 }}
               />
