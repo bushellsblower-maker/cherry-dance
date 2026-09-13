@@ -1,7 +1,7 @@
 import { ArrowUpRight, CalendarHeart, ShoppingBag, Sparkles } from "lucide-react";
 import { CherryMark } from "@/components/CherryMark";
 import type { SiteContent } from "@/lib/content";
-import { upcomingShows } from "@/lib/content";
+import { formatShowDate, formatShowTime, upcomingShows } from "@/lib/content";
 
 export function Hero({ content }: { content: SiteContent }) {
   const next = upcomingShows(content)[0];
@@ -52,7 +52,8 @@ export function Hero({ content }: { content: SiteContent }) {
               <>
                 <h2 className="font-display mt-4 text-3xl leading-tight">{next.title}</h2>
                 <p className="mt-3 text-petal">
-                  {next.date} {next.time ? `· ${next.time}` : ""} 
+                  {next.date ? formatShowDate(next.date) : ""}
+                  {formatShowTime(next.time) ? ` · ${formatShowTime(next.time)}` : ""}
                 </p>
                 <p className="mt-1 text-sm text-cream/70">{next.venue}</p>
                 <a href={next.ticketUrl} className="btn btn-gold mt-6 w-full">

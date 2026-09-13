@@ -60,7 +60,7 @@ function ShowCard({
         {show.venue}
       </p>
       {show.notes ? <p className="mt-3 text-sm text-muted">{show.notes}</p> : null}
-      <a href={show.ticketUrl} className="btn btn-primary mt-auto pt-3">
+      <a href={show.ticketUrl} className="btn btn-primary mt-5 self-start">
         {ticketsLabel}
         <ArrowUpRight size={16} />
       </a>
