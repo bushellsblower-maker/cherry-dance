@@ -4,6 +4,7 @@ import { Cabaret } from "@/components/Cabaret";
 import { Classes } from "@/components/Classes";
 import { Contact } from "@/components/Contact";
 import { Hero } from "@/components/Hero";
+import { HenParties } from "@/components/HenParties";
 import { Shop } from "@/components/Shop";
 import { Shows } from "@/components/Shows";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -26,6 +27,7 @@ function HomePage() {
         <Hero content={content} />
         <Shows content={content} />
         <Classes content={content} />
+        <HenParties content={content} />
         <Booking content={content} />
         <Shop content={content} />
         <Cabaret content={content} />

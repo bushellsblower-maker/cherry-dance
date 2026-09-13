@@ -44,6 +44,13 @@ export const ShopItemSchema = z.object({
 });
 export type ShopItem = z.infer<typeof ShopItemSchema>;
 
+export const HenPackageSchema = z.object({
+  name: z.string().min(1),
+  price: z.string().min(1),
+  includes: z.string().optional(),
+});
+export type HenPackage = z.infer<typeof HenPackageSchema>;
+
 export const SiteContentSchema = z.object({
   hero: z.object({
     eyebrow: z.string(),
@@ -70,7 +77,18 @@ export const SiteContentSchema = z.object({
     heading: z.string(),
     body: z.string(),
     url: z.string(),
+    ctaLabel: z.string(),
+    priceNote: z.string(),
     items: z.array(ShopItemSchema),
+  }),
+  henParties: z.object({
+    heading: z.string(),
+    intro: z.string(),
+    designNote: z.string(),
+    contactLabel: z.string(),
+    pageUrl: z.string(),
+    pageLabel: z.string(),
+    packages: z.array(HenPackageSchema),
   }),
   socials: z.object({
     facebook: z.string(),
@@ -110,6 +128,7 @@ export const SiteContentSchema = z.object({
     shop: z.string(),
     shows: z.string(),
     tickets: z.string(),
+    hens: z.string(),
   }),
 });
 export type SiteContent = z.infer<typeof SiteContentSchema>;

@@ -8,7 +8,7 @@
   "classes": {
     "heading": "Classes & timetable",
     "intro": "Pole, aerial, yolates and dance — weekday evenings in the centre of Eastbourne.",
-    "note": "Times below are as published on cherry-dance.com. Workshops appear on the live TeamUp schedule.",
+    "note": "Times below are the published UK timetable from cherry-dance.com. The TeamUp widget on the old site is labelled America/Los Angeles — do not read those clock times as UK class times. Workshops appear on the live TeamUp schedule.",
     "groups": [
       {
         "id": "pole",
@@ -50,27 +50,85 @@
   "booking": {
     "heading": "Book a class",
     "body": "Class bookings run through TeamUp (GoTeamUp). Open the live schedule to pick a session, including regular classes and workshops.",
-    "teamUpNote": "The TeamUp schedule is the place to book. The original Wix site also embeds booking widgets; this site sends you straight to TeamUp.",
+    "teamUpNote": "This site links to the clean TeamUp schedule — not the stale dated Wix button, and not the homepage widget (that widget is labelled America/Los Angeles and is not a UK timetable).",
     "privateNote": "For private classes, email the studio — one or two-to-one sessions can be arranged at a time that suits you.",
     "teamUpUrl": "https://goteamup.com/p/2104075-cherry-dance/c/schedule",
     "privateEmail": "cherrydance@hotmail.co.uk"
   },
   "shop": {
     "heading": "Studio shop",
-    "body": "Uniform and merch live on the existing Cherry Dance shop. Children’s and adults’ sizes are available.",
-    "url": "https://www.cherry-dance.com/shop",
+    "body": "Uniforms and merch are sold through the Clothing Kings Cherry Dance partnership catalog. The tiles on the old Wix /shop page are outdated and are not the purchase destination.",
+    "url": "https://www.theclothingkings.co.uk/category/partnerships/cherry-dance/",
+    "ctaLabel": "Shop on Clothing Kings",
+    "priceNote": "Example prices below are as listed on Clothing Kings and are exclusive of VAT.",
     "items": [
       {
-        "name": "Uniform top",
-        "detail": "£15 if purchased separately. Sizes Small, Medium, Large, Extra Large. Children’s and adults’ sizes available."
+        "name": "Adults Zip Hoodie",
+        "detail": "£35 ex VAT"
       },
       {
-        "name": "Uniform shorts",
-        "detail": "£35 if purchased separately. Sizes Small, Medium, Large, Extra Large. Children’s and adults’ sizes available."
+        "name": "Kids Zip Hoodie",
+        "detail": "£35 ex VAT"
       },
       {
-        "name": "Merch",
-        "detail": "Additional studio merch is listed on the shop (men’s, women’s and children’s sizes where offered)."
+        "name": "Adults Comfort Sweatshirt",
+        "detail": "£30 ex VAT"
+      },
+      {
+        "name": "Cherry Adult Joggers",
+        "detail": "£36 ex VAT"
+      },
+      {
+        "name": "Racer Back Tank",
+        "detail": "£25 ex VAT"
+      },
+      {
+        "name": "Sports Bra",
+        "detail": "£25 ex VAT"
+      },
+      {
+        "name": "Cherry Kids Joggers",
+        "detail": "£30 ex VAT"
+      },
+      {
+        "name": "Kids Comfort Sweatshirt",
+        "detail": "£25–£30 ex VAT"
+      },
+      {
+        "name": "Ultra Premium Zip Hoodie",
+        "detail": "£45 ex VAT"
+      }
+    ]
+  },
+  "henParties": {
+    "heading": "Hen & adult parties",
+    "intro": "Adult parties and hen parties at the Eastbourne studios. Design your own package, or choose one of the published packages below.",
+    "designNote": "Contact Cheryl to book, or if you have special requests to make the party more personal.",
+    "contactLabel": "Contact Cheryl",
+    "pageUrl": "https://www.cherry-dance.com/hen-parties",
+    "pageLabel": "Hen parties page",
+    "packages": [
+      {
+        "name": "Pole",
+        "price": "£10 pp / 1 hr or £15 pp / 1.5 hr"
+      },
+      {
+        "name": "Burlesque",
+        "price": "£10 pp / 1 hr"
+      },
+      {
+        "name": "Ann Summers",
+        "price": "£20 venue fee + £5 pp, 2 hours"
+      },
+      {
+        "name": "Package 1",
+        "price": "£250 / 2 hours",
+        "includes": "Pole + burlesque + photoshoot (6 photos, outfits, 2 bottles of Bubbles)"
+      },
+      {
+        "name": "Package 2",
+        "price": "£350 / 2–3 hours",
+        "includes": "Burlesque + hair & makeup + photoshoot"
       }
     ]
   },
@@ -95,20 +153,21 @@
       "date": "2026-09-12",
       "time": "19:30",
       "venue": "Royal Hippodrome Theatre, Eastbourne",
-      "price": "£22.50",
       "ticketUrl": "https://royalhippodrome.com/event/cabaret-cerises-10-years-of-burlesque/",
       "status": "passed",
-      "notes": "20% of proceeds to Epilepsy Society. Venue page marked the event as passed.",
+      "notes": "18+. Epilepsy Society fundraiser. This date has passed.",
       "ageRestricted": true
     },
     {
       "id": "grove-2026-10-02",
-      "title": "Cabaret Cerises October show 2026",
+      "title": "Cabaret Cerises Halloween Burlesque Show",
       "date": "2026-10-02",
       "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "upcoming"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/114325",
+      "status": "upcoming",
+      "notes": "18+. Halloween theme from the show poster. Typically 8–10pm. No door sales.",
+      "ageRestricted": true
     },
     {
       "id": "grove-2026-12-04",
@@ -116,56 +175,76 @@
       "date": "2026-12-04",
       "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "upcoming"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/114326",
+      "status": "upcoming",
+      "notes": "18+. Typically 8–10pm. No door sales.",
+      "ageRestricted": true
     },
     {
       "id": "grove-2027-02-05",
       "title": "Cabaret Cerises 2027 season",
       "date": "2027-02-05",
+      "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "scheduled"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/174888",
+      "status": "scheduled",
+      "notes": "Typically 8–10pm. 18+. No door sales.",
+      "ageRestricted": true
     },
     {
       "id": "grove-2027-04-02",
       "title": "Cabaret Cerises 2027 season",
       "date": "2027-04-02",
+      "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "scheduled"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/174889",
+      "status": "scheduled",
+      "notes": "Typically 8–10pm. 18+. No door sales.",
+      "ageRestricted": true
     },
     {
       "id": "grove-2027-06-04",
       "title": "Cabaret Cerises 2027 season",
       "date": "2027-06-04",
+      "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "scheduled"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/174890",
+      "status": "scheduled",
+      "notes": "Typically 8–10pm. 18+. No door sales.",
+      "ageRestricted": true
     },
     {
       "id": "grove-2027-08-06",
       "title": "Cabaret Cerises 2027 season",
       "date": "2027-08-06",
+      "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "scheduled"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/174891",
+      "status": "scheduled",
+      "notes": "Typically 8–10pm. 18+. No door sales.",
+      "ageRestricted": true
     },
     {
       "id": "grove-2027-10-01",
       "title": "Cabaret Cerises 2027 season",
       "date": "2027-10-01",
+      "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "scheduled"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/174892",
+      "status": "scheduled",
+      "notes": "Typically 8–10pm. 18+. No door sales.",
+      "ageRestricted": true
     },
     {
       "id": "grove-2027-12-03",
       "title": "Cabaret Cerises 2027 season",
       "date": "2027-12-03",
+      "time": "20:00",
       "venue": "The Grove Theatre, Eastbourne",
-      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/",
-      "status": "scheduled"
+      "ticketUrl": "https://cabaretcerises.onlineticketseller.com/events/174893",
+      "status": "scheduled",
+      "notes": "Typically 8–10pm. 18+. No door sales.",
+      "ageRestricted": true
     }
   ],
   "contact": {
@@ -187,19 +266,19 @@
   },
   "instructors": {
     "heading": "Instructors",
-    "note": "All Cherry Dance instructors are fully qualified, insured and first aid trained.",
+    "note": "All Cherry Dance instructors are fully qualified, insured and first aid trained. Named here as published on the instructors page.",
     "people": [
       {
         "name": "Cheryl Cooper",
-        "role": "Founder — dance instructor, established Cherry Dance in 2012"
+        "role": "Founder"
       },
       {
         "name": "Carl Halstad",
-        "role": "Pole fitness instructor, teaching at Cherry Dance since 2019"
+        "role": "Pole Fitness Instructor"
       },
       {
         "name": "Emma Rule",
-        "role": "Burlesque instructor, teaching since 2020"
+        "role": "Burlesque Instructor"
       }
     ]
   },
@@ -207,6 +286,7 @@
     "book": "Book a class",
     "shop": "Shop",
     "shows": "Upcoming shows",
-    "tickets": "Get tickets"
+    "tickets": "Get tickets",
+    "hens": "Hen parties"
   }
 }

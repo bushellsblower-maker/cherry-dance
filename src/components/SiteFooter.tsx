@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { CherryMark } from "@/components/CherryMark";
+import { BrandLogo } from "@/components/BrandLogo";
 import type { SiteContent } from "@/lib/content";
 
 export function SiteFooter({ content }: { content: SiteContent }) {
@@ -7,10 +7,7 @@ export function SiteFooter({ content }: { content: SiteContent }) {
     <footer className="border-t border-cherry/10 bg-cream-deep/70">
       <div className="wrap grid gap-8 py-12 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
-            <CherryMark className="h-8 w-8" />
-            <strong className="font-display text-lg">Cherry Dance</strong>
-          </div>
+          <BrandLogo className="h-9" />
           <p className="mt-3 max-w-xs text-sm text-ink-soft">
             Dance and fitness classes in central Eastbourne. Founded in 2012 by
             Cheryl Cooper.
@@ -28,7 +25,10 @@ export function SiteFooter({ content }: { content: SiteContent }) {
             Book on TeamUp
           </a>
           <a className="mt-1 block text-ink-soft" href={content.shop.url}>
-            Shop
+            Shop on Clothing Kings
+          </a>
+          <a className="mt-1 block text-ink-soft" href="/#parties">
+            Hen &amp; adult parties
           </a>
         </div>
         <div className="text-sm">

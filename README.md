@@ -6,11 +6,11 @@ Marketing site for **Cherry Dance** (Eastbourne dance & fitness studios) and the
 - Brand source: https://www.cherry-dance.com
 - Tickets: https://cabaretcerises.onlineticketseller.com/
 - Booking (link out): https://goteamup.com/p/2104075-cherry-dance/c/schedule
-- Shop (link out): https://www.cherry-dance.com/shop
+- Shop (Clothing Kings): https://www.theclothingkings.co.uk/category/partnerships/cherry-dance/
 
 Stack matches the sibling Workers (`eastbourne`, `clacton-on-sea`): TanStack Start, React, Tailwind, Vite, Cloudflare Worker `cherry`.
 
-Public copy is seeded from [`docs/research-pack.json`](docs/research-pack.json) and the source site. The app does not invent classes, prices, dates, or venues.
+Public copy is seeded from [`docs/research-pack.json`](docs/research-pack.json) and [`docs/redesign-brief.md`](docs/redesign-brief.md). The app does not invent classes, ticket prices, dates, or venues. Shop checkout is Clothing Kings (ex VAT), not the outdated Wix `/shop` tiles.
 
 ## Local run
 

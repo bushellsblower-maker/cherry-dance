@@ -81,8 +81,9 @@ export function Shows({ content }: { content: SiteContent }) {
             <p className="chip bg-petal text-cherry">Don&apos;t hunt for dates</p>
             <h2 className="font-display mt-3 text-3xl sm:text-5xl">Upcoming performances</h2>
             <p className="mt-3 max-w-2xl text-ink-soft">
-              Booked Cabaret Cerises dates from the verified research pack. Tickets
-              open on Online Ticket Seller or the venue page.
+              Cabaret Cerises dates with direct Online Ticket Seller event links.
+              All listed shows are 18+. Ticket prices are not published here —
+              open the seller page for current availability.
             </p>
           </div>
         </div>
@@ -100,8 +101,10 @@ export function Shows({ content }: { content: SiteContent }) {
           <div className="mt-10">
             <h3 className="font-display text-2xl">2027 Grove Theatre season</h3>
             <p className="mt-2 text-sm text-ink-soft">
-              Scheduled Friday dates at The Grove Theatre, Eastbourne. Ticket times
-              and titles will follow the box office listing.
+              Friday dates at The Grove Theatre, Eastbourne. Each date has its own
+              Online Ticket Seller event. Typically 8–10pm; 18+; no door sales.
+              Grove Theatre is stairs only, with no wheelchair access (as stated
+              on the ticket pages).
             </p>
             <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {scheduled.map((show) => (

@@ -1,4 +1,5 @@
-import { ArrowUpRight, CalendarHeart, ShoppingBag, Sparkles } from "lucide-react";
+import { ArrowUpRight, CalendarHeart, PartyPopper, ShoppingBag, Sparkles } from "lucide-react";
+import { BrandLogo } from "@/components/BrandLogo";
 import { CherryMark } from "@/components/CherryMark";
 import type { SiteContent } from "@/lib/content";
 import { formatShowDate, formatShowTime, upcomingShows } from "@/lib/content";
@@ -15,7 +16,8 @@ export function Hero({ content }: { content: SiteContent }) {
       </div>
       <div className="wrap relative grid items-center gap-10 py-14 md:grid-cols-[1.15fr_0.85fr] md:py-20">
         <div className="rise-in">
-          <p className="chip bg-petal text-cherry">{content.hero.eyebrow}</p>
+          <BrandLogo className="h-14" />
+          <p className="chip mt-5 bg-petal text-cherry">{content.hero.eyebrow}</p>
           <h1 className="font-display mt-4 text-4xl leading-[1.05] font-semibold text-balance sm:text-6xl">
             {content.hero.title}
           </h1>
@@ -33,6 +35,10 @@ export function Hero({ content }: { content: SiteContent }) {
             <a href="/#shows" className="btn btn-ghost">
               <CalendarHeart size={16} />
               {content.ctas.shows}
+            </a>
+            <a href="/#parties" className="btn btn-ghost">
+              <PartyPopper size={16} />
+              {content.ctas.hens}
             </a>
           </div>
         </div>

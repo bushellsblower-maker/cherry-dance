@@ -5,7 +5,7 @@ This Worker preview is meant to sit at **https://cherry.cybush.uk**. It is not y
 ## What is already true
 
 - Public copy is seeded from `docs/research-pack.json` and cherry-dance.com (and the pack’s linked sources).
-- Booking, shop, and tickets are **link-outs** to TeamUp, the Wix shop, and Online Ticket Seller / venue pages.
+- Booking, shop, and tickets are **link-outs** to TeamUp, the Clothing Kings partnership catalog, and Online Ticket Seller event URLs (or the Hippodrome venue page for the passed 12 Sep 2026 show).
 - `/admin` edits the same content model the homepage reads.
 - `SITE_CONTENT` KV (`cherry-site-content`, id `108b76dd196c4a1793bc4f22f269f0f9`) is bound in `wrangler.jsonc`. Until that binding is live on the deployed Worker, saves fall back to isolate memory.
 - There is **no login**. Anyone who can open `/admin` can rewrite the site.
@@ -60,6 +60,8 @@ Go-live steps:
 
 Do not treat the repo JSON as the production store. Deploys would clobber owner edits unless you stop seeding over KV.
 
+If KV still holds the first-ship JSON (Wix `/shop` URL, generic ticket-home links, invented Hippodrome £22.50), open `/admin` and **Reset to seed** after this content correction. The seed now points shop to Clothing Kings, uses per-show Online Ticket Seller URLs, and includes hen-party packages.
+
 ## 4. Domain cutover vs preview
 
 Two viable setups:
@@ -74,7 +76,7 @@ Two viable setups:
 
 - Add a custom domain / route on the `cherry` Worker for `cherry-dance.com` and `www`.
 - Lower Wix DNS (or proxy) only after redirects for `/shop`, existing booking links, and any indexed paths are mapped.
-- Keep a long overlap: Wix stays the shop host even if the marketing homepage moves.
+- Keep a long overlap: Clothing Kings stays the shop host even if the marketing homepage moves. Do not send shoppers to the outdated Wix `/shop` tiles.
 
 Hurdles:
 
@@ -87,8 +89,8 @@ Hurdles:
 | Concern | System of record | This site |
 | --- | --- | --- |
 | Class booking | TeamUp / GoTeamUp | Link to schedule |
-| Uniform / merch checkout | Wix shop | Link to `/shop` |
-| Cabaret tickets | Online Ticket Seller + venue pages | Per-show ticket URL |
+| Uniform / merch checkout | Clothing Kings partnership catalog | Link to the Cherry Dance category (prices ex VAT) |
+| Cabaret tickets | Online Ticket Seller event URLs + Hippodrome venue page | Per-show ticket URL — do not invent prices from unlabeled seller fields |
 | Private classes | Email | `mailto:` only |
 
 If TeamUp times change, update the timetable **and** send people to TeamUp. Never take card payments here.
@@ -135,9 +137,9 @@ Recommended rhythm:
 
 1. After a show night, set that row to **passed** (keep the real venue URL).
 2. When Online Ticket Seller lists the next Grove date, set it **upcoming** and paste the exact ticket URL.
-3. Keep 2027 Grove Fridays as **scheduled** until a public listing exists — do not invent times or titles.
-4. Mark **18+** only where the venue or Cabaret Cerises copy says so. The troupe is adult-only; that is already stated in the cabaret block.
-5. Source of truth for “is this still on sale?” is the ticket URL, not this CMS.
+3. 2027 Grove Fridays now have Online Ticket Seller event URLs (`174888`–`174893`). Keep them **scheduled** until you want to promote a date as upcoming. Do not invent ticket prices (raw seller fields are unlabeled).
+4. Mark **18+** on every Cabaret Cerises listing. The troupe is adult-only; that is already stated in the cabaret block.
+5. Source of truth for “is this still on sale?” is the ticket URL, not this CMS. Use the clean TeamUp schedule URL for classes — never publish the TeamUp LA-timezone widget times as the UK timetable.
 
 Do not scrape Hippodrome / Grove pages from the Worker without permission. A human paste into `/admin` is the supportable workflow.
 

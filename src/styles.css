@@ -7,8 +7,8 @@
   --color-ink: #2a0d16;
   --color-ink-soft: #5c2a38;
   --color-muted: #8a5462;
-  --color-cherry: #c81e3a;
-  --color-cherry-deep: #9b1530;
+  --color-cherry: #cd0900;
+  --color-cherry-deep: #9a0700;
   --color-blush: #ff8aa5;
   --color-petal: #ffd0db;
   --color-gold: #e0b35a;
@@ -16,7 +16,7 @@
   --color-stage: #09060a;
   --color-stage-soft: #1a1016;
   --color-wine: #6b1224;
-  --color-ring: #c81e3a;
+  --color-ring: #cd0900;
 
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-sans: "Outfit", "Segoe UI", system-ui, sans-serif;
@@ -98,7 +98,7 @@
   .btn-primary {
     background: var(--color-cherry);
     color: white;
-    box-shadow: 0 10px 24px rgb(200 30 58 / 0.28);
+    box-shadow: 0 10px 24px rgb(205 9 0 / 0.28);
   }
 
   .btn-primary:hover {
@@ -133,7 +133,7 @@
     background:
       radial-gradient(circle at 12% 18%, rgb(224 179 90 / 0.2), transparent 22%),
       radial-gradient(circle at 86% 12%, rgb(255 138 165 / 0.12), transparent 18%),
-      radial-gradient(circle at 70% 80%, rgb(200 30 58 / 0.16), transparent 26%),
+      radial-gradient(circle at 70% 80%, rgb(205 9 0 / 0.16), transparent 26%),
       var(--color-stage);
   }
 }
