@@ -7,7 +7,7 @@ export function SiteFooter({ content }: { content: SiteContent }) {
     <footer className="border-t border-white/10 bg-ink">
       <div className="wrap grid gap-6 py-8 md:grid-cols-3">
         <div>
-          <BrandLogo onDark className="h-16" />
+          <BrandLogo onDark className="h-20 max-w-[12rem]" />
           <p className="mt-2 max-w-xs text-sm text-ink-soft">
             Dance and fitness classes in central Eastbourne. Founded in 2012 by
             Cheryl Cooper.

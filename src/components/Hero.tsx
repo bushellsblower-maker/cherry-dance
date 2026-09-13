@@ -10,7 +10,7 @@ export function Hero({ content }: { content: SiteContent }) {
     <section id="top" className="splash-bg relative overflow-hidden">
       <div className="wrap relative grid items-center gap-6 py-8 md:grid-cols-[1.15fr_0.85fr] md:py-10">
         <div className="rise-in">
-          <BrandLogo onDark className="h-36 sm:h-44 md:h-52" />
+          <BrandLogo onDark className="h-40 max-w-[min(100%,20rem)] sm:h-48 sm:max-w-[22rem] md:h-56 md:max-w-[26rem]" />
           <p className="chip mt-4 bg-cherry text-white">{content.hero.eyebrow}</p>
           <h1 className="font-display mt-3 text-3xl leading-[1.05] font-semibold text-balance text-cherry sm:text-5xl">
             {content.hero.title}

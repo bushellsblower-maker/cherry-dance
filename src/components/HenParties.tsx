@@ -10,7 +10,7 @@ export function HenParties({ content }: { content: SiteContent }) {
         <img
           src={hens.heroImage}
           alt=""
-          className="mb-5 h-52 w-full object-cover sm:h-64"
+          className="mb-4 h-auto w-full"
         />
         <p className="chip bg-cherry text-white">Adult parties</p>
         <h2 className="font-display mt-2 text-3xl text-cream sm:text-4xl">

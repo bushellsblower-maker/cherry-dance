@@ -19,11 +19,24 @@ const NAV = [
 export function SiteHeader({ content }: { content: SiteContent }) {
   const [open, setOpen] = useState(false);
 
+  function goTo(href: string) {
+    setOpen(false);
+    const id = href.split("#")[1];
+    window.setTimeout(() => {
+      if (!id) {
+        window.location.href = href;
+        return;
+      }
+      document.getElementById(id)?.scrollIntoView({ behavior: "auto", block: "start" });
+      window.history.replaceState(null, "", href);
+    }, 80);
+  }
+
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 overflow-x-hidden border-b border-white/10 bg-ink/90 backdrop-blur-xl">
       <div className="wrap flex items-center justify-between py-1.5">
-        <a href="/#top" className="flex items-center no-underline">
-          <BrandLogo onDark className="h-14 sm:h-16" />
+        <a href="/#top" className="flex max-w-[11rem] items-center no-underline sm:max-w-[13.5rem]">
+          <BrandLogo onDark className="h-[4.1rem] sm:h-[4.75rem]" />
         </a>
         <nav className="hidden items-center gap-3.5 xl:flex">
           {NAV.map((item) => (
@@ -57,7 +70,10 @@ export function SiteHeader({ content }: { content: SiteContent }) {
                 key={item.href}
                 href={item.href}
                 className="text-base font-medium text-cream no-underline"
-                onClick={() => setOpen(false)}
+                onClick={(event) => {
+                  event.preventDefault();
+                  goTo(item.href);
+                }}
               >
                 {item.label}
               </a>

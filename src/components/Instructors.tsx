@@ -4,8 +4,8 @@ import { cx } from "@/lib/utils";
 
 export function Instructors({ content }: { content: SiteContent }) {
   return (
-    <section id="instructors" className="scroll-mt-20">
-      <div className="wrap section-block pb-3">
+    <section>
+      <div id="instructors" className="wrap section-block scroll-mt-20 pb-3">
         <p className="chip bg-cherry text-white">The team</p>
         <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
           <h2 className="font-display text-3xl text-cream sm:text-4xl">
@@ -24,7 +24,7 @@ export function Instructors({ content }: { content: SiteContent }) {
             key={person.name}
             className={cx(light ? "bg-petal/90 text-ink" : "splash-bleed text-cream")}
           >
-            <div className="wrap grid items-start gap-4 py-5 md:grid-cols-[200px_1fr] md:gap-6">
+            <div className="wrap grid items-start gap-4 py-6 md:grid-cols-[200px_1fr] md:gap-6">
               <img
                 src={person.photo}
                 alt={person.name}
@@ -34,7 +34,7 @@ export function Instructors({ content }: { content: SiteContent }) {
                 )}
               />
               <div>
-                <h3 className="font-display text-2xl tracking-wide text-cherry uppercase sm:text-3xl">
+                <h3 className="font-display text-3xl tracking-wide text-cherry uppercase sm:text-4xl">
                   {person.name}
                 </h3>
                 <p
