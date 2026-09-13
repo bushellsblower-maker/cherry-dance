@@ -187,7 +187,7 @@ function hydrateContent(stored: unknown): SiteContent {
       photos: hasWeddingContentPhotos(
         isRecord(stored.wedding) ? stored.wedding.photos : null,
       )
-        ? (stored.wedding.photos as string[])
+        ? (stored.wedding as { photos: string[] }).photos
         : base.wedding.photos,
       review: {
         ...base.wedding.review,
