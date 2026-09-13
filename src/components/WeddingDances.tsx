@@ -12,15 +12,28 @@ export function WeddingDances({ content }: { content: SiteContent }) {
           {wedding.heading}
         </h2>
         <p className="mt-3 max-w-3xl text-cream/85">{wedding.intro}</p>
-        <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
+        <div className="mt-5 grid gap-2 sm:grid-cols-3">
           {wedding.photos.map((src) => (
             <img
               key={src}
               src={src}
               alt=""
-              className="h-52 w-full object-cover sm:h-56"
+              className="h-48 w-full object-cover sm:h-56"
             />
           ))}
+        </div>
+        <div className="mt-5 grid gap-2.5 md:grid-cols-[1.15fr_0.85fr]">
+          <div className="bg-cherry px-4 py-4">
+            <h3 className="font-display text-2xl tracking-wide text-white uppercase sm:text-3xl">
+              {wedding.firstDanceTitle}
+            </h3>
+            <p className="mt-1.5 text-white/90">{wedding.personalTouch}</p>
+            <p className="mt-1 text-sm text-white/85">{wedding.personalNote}</p>
+          </div>
+          <div className="card">
+            <p className="font-semibold text-gold-dust">{wedding.sessionRate}</p>
+            <p className="mt-1.5 text-sm text-cream/80">{wedding.sessionNote}</p>
+          </div>
         </div>
         <blockquote className="card mt-5 border-l-4 border-cherry text-sm text-cream/90 italic">
           “{wedding.review.text}”

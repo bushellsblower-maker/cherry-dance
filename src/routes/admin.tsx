@@ -398,6 +398,19 @@ function AdminPage() {
               })
             }
           />
+          <TextArea
+            label="Slideshow photo paths (one per line)"
+            value={draft.henParties.photos.join("\n")}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                henParties: {
+                  ...draft.henParties,
+                  photos: value.split("\n").filter(Boolean),
+                },
+              })
+            }
+          />
           <Field
             label="Design-your-own heading"
             value={draft.henParties.designOwn}
@@ -497,6 +510,56 @@ function AdminPage() {
               setDraft({
                 ...draft,
                 wedding: { ...draft.wedding, intro: value },
+              })
+            }
+          />
+          <Field
+            label="First dance heading"
+            value={draft.wedding.firstDanceTitle}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, firstDanceTitle: value },
+              })
+            }
+          />
+          <Field
+            label="Personal touch line"
+            value={draft.wedding.personalTouch}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, personalTouch: value },
+              })
+            }
+          />
+          <TextArea
+            label="Personal note"
+            value={draft.wedding.personalNote}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, personalNote: value },
+              })
+            }
+          />
+          <Field
+            label="Session rate"
+            value={draft.wedding.sessionRate}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, sessionRate: value },
+              })
+            }
+          />
+          <Field
+            label="Session note"
+            value={draft.wedding.sessionNote}
+            onChange={(value) =>
+              setDraft({
+                ...draft,
+                wedding: { ...draft.wedding, sessionNote: value },
               })
             }
           />
