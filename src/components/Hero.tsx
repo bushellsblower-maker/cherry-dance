@@ -16,7 +16,9 @@ export function Hero({ content }: { content: SiteContent }) {
       </div>
       <div className="wrap relative grid items-center gap-10 py-14 md:grid-cols-[1.15fr_0.85fr] md:py-20">
         <div className="rise-in">
-          <BrandLogo className="h-14" />
+          <div>
+            <BrandLogo className="h-20 sm:h-24" />
+          </div>
           <p className="chip mt-5 bg-petal text-cherry">{content.hero.eyebrow}</p>
           <h1 className="font-display mt-4 text-4xl leading-[1.05] font-semibold text-balance sm:text-6xl">
             {content.hero.title}

@@ -11,14 +11,14 @@ export function BrandLogo({
     <img
       src="/cherry-dance-logo.png"
       alt="Cherry Dance"
-      className={cx("h-10 w-auto", className)}
+      className={cx("w-auto max-w-none", className ?? "h-12")}
     />
   );
 
   if (onDark) return image;
 
   return (
-    <span className="inline-flex items-center rounded-xl bg-ink px-2 py-1">
+    <span className="inline-flex w-fit items-center rounded-2xl bg-ink px-3 py-1.5">
       {image}
     </span>
   );

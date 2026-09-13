@@ -21,7 +21,7 @@ export function SiteHeader({ content }: { content: SiteContent }) {
     <header className="sticky top-0 z-40 border-b border-cherry/10 bg-cream/80 backdrop-blur-xl">
       <div className="wrap flex items-center justify-between py-3">
         <a href="/#top" className="flex items-center no-underline">
-          <BrandLogo className="h-9" />
+          <BrandLogo className="h-12" />
         </a>
         <nav className="hidden items-center gap-5 lg:flex">
           {NAV.map((item) => (
