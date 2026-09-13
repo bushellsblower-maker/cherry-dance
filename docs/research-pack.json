@@ -20,16 +20,38 @@
     "socials": {
       "facebook": "https://www.facebook.com/cherrydancestudio7",
       "instagram": "https://www.instagram.com/cherry_dance/"
+    },
+    "logo_url": "https://static.wixstatic.com/media/b963c7_1537f227774c474bb95d9148c7ea8572~mv2.png",
+    "colors": {
+      "red": "#CD0900",
+      "dusty_gold": "rgb(176,169,134)"
     }
   },
   "booking": {
     "provider": "TeamUp / GoTeamUp",
     "url": "https://goteamup.com/p/2104075-cherry-dance/c/schedule",
-    "also": "Wix Bookings widgets on source site; private classes via email"
+    "also": "Wix Bookings widgets on source site; private classes via email",
+    "memberships_url": "https://goteamup.com/p/2104075-cherry-dance/memberships",
+    "courses_url": "https://goteamup.com/p/2104075-cherry-dance/courses",
+    "store_url": "https://goteamup.com/p/2104075-cherry-dance/c/store",
+    "timezone_warning": "TeamUp embed on Wix is labelled America/Los Angeles \u2014 do not display widget times as UK timetable; use static UK table."
   },
   "shop": {
-    "url": "https://www.cherry-dance.com/shop",
-    "note": "Link out to existing Wix shop \u2014 uniform items (tops \u00a315, shorts \u00a335, various merch)"
+    "url": "https://www.theclothingkings.co.uk/category/partnerships/cherry-dance/",
+    "provider": "Clothing Kings (third-party WooCommerce)",
+    "note": "Wix /shop tiles are outdated; live catalog is Clothing Kings. Prices on Clothing Kings are ex VAT.",
+    "wix_teaser_page": "https://www.cherry-dance.com/shop",
+    "products_live_examples": [
+      "Adults Zip Hoodie \u00a335",
+      "Kids Zip Hoodie \u00a335",
+      "Adults Comfort Sweatshirt \u00a330",
+      "Cherry Adult Joggers \u00a336",
+      "Racer Back Tank \u00a325",
+      "Sports Bra \u00a325",
+      "Cherry Kids Joggers \u00a330",
+      "Kids Comfort Sweatshirt \u00a325\u2013\u00a330",
+      "Ultra Premium Zip Hoodie \u00a345"
+    ]
   },
   "classes": {
     "pole_fitness": [
@@ -72,56 +94,116 @@
         "date": "2026-09-12",
         "time": "19:30",
         "venue": "Royal Hippodrome Theatre, Eastbourne",
-        "price": "\u00a322.50",
-        "ticket_url": "https://royalhippodrome.com/event/cabaret-cerises-10-years-of-burlesque/",
         "status": "passed",
-        "notes": "20% proceeds to Epilepsy Society; 18+. Venue page marked event has passed as of 2026-09-13.",
+        "ticket_url": "https://royalhippodrome.com/event/cabaret-cerises-10-years-of-burlesque/",
+        "notes": "18+; Epilepsy Society fundraiser. Crawl 13 Sep marked as passed/TONIGHT overlay.",
         "sources": [
-          "https://royalhippodrome.com/event/cabaret-cerises-10-years-of-burlesque/"
+          "instagram CabaretCerises",
+          "royalhippodrome"
         ]
       },
       {
-        "title": "Cabaret Cerises October show 2026",
+        "title": "Cabaret Cerises Halloween Burlesque Show",
         "date": "2026-10-02",
         "time": "20:00",
+        "end": "22:00",
         "venue": "The Grove Theatre, Eastbourne",
-        "ticket_url": "https://cabaretcerises.onlineticketseller.com/",
         "status": "upcoming",
+        "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/114325",
+        "notes": "18+; Halloween theme from poster",
         "sources": [
-          "https://cabaretcerises.wixsite.com/eastbourne",
-          "https://allevents.in/org/cabaret-cerises/26305372"
+          "onlineticketseller",
+          "cabaretcerises.wixsite"
         ]
       },
       {
         "title": "Cabaret Cerises December show 2026",
         "date": "2026-12-04",
         "time": "20:00",
+        "end": "22:00",
         "venue": "The Grove Theatre, Eastbourne",
-        "ticket_url": "https://cabaretcerises.onlineticketseller.com/",
         "status": "upcoming",
+        "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/114326",
         "sources": [
-          "https://cabaretcerises.wixsite.com/eastbourne"
+          "onlineticketseller",
+          "cabaretcerises.wixsite"
         ]
       },
       {
-        "title": "Cabaret Cerises 2027 season (Grove Theatre)",
-        "dates": [
-          "2027-02-05",
-          "2027-04-02",
-          "2027-06-04",
-          "2027-08-06",
-          "2027-10-01",
-          "2027-12-03"
-        ],
-        "venue": "The Grove Theatre, Eastbourne",
-        "ticket_url": "https://cabaretcerises.onlineticketseller.com/",
+        "title": "Cabaret Cerises 2027 Grove season",
         "status": "scheduled",
-        "sources": [
-          "https://cabaretcerises.wixsite.com/eastbourne"
-        ]
+        "venue": "The Grove Theatre, Eastbourne",
+        "dates": [
+          {
+            "date": "2027-02-05",
+            "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/174888"
+          },
+          {
+            "date": "2027-04-02",
+            "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/174889"
+          },
+          {
+            "date": "2027-06-04",
+            "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/174890"
+          },
+          {
+            "date": "2027-08-06",
+            "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/174891"
+          },
+          {
+            "date": "2027-10-01",
+            "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/174892"
+          },
+          {
+            "date": "2027-12-03",
+            "ticket_url": "https://cabaretcerises.onlineticketseller.com/events/174893"
+          }
+        ],
+        "notes": "Typically 8\u201310pm; 18+; no door sales"
       }
     ]
   },
   "instructors_note": "Cheryl Cooper (founder), Carl (pole since 2019), Emma (burlesque since 2020). Details on https://www.cherry-dance.com/instructors",
-  "design_direction": "Modern, interactive, fun \u2014 cherry/red/pink/black sparkle cabaret energy for Cerises breakout; warm welcoming studio vibe for main dance school. Mobile-first. Prominent upcoming performances so users don't hunt."
+  "design_direction": "Modern, interactive, fun \u2014 cherry/red/pink/black sparkle cabaret energy for Cerises breakout; warm welcoming studio vibe for main dance school. Mobile-first. Prominent upcoming performances so users don't hunt.",
+  "hen_parties": {
+    "url": "https://www.cherry-dance.com/hen-parties",
+    "packages": [
+      {
+        "name": "Pole",
+        "price": "\u00a310 pp / 1 hr or \u00a315 pp / 1.5 hr"
+      },
+      {
+        "name": "Burlesque",
+        "price": "\u00a310 pp / 1 hr"
+      },
+      {
+        "name": "Ann Summers",
+        "price": "\u00a320 venue + \u00a35 pp, 2 hours"
+      },
+      {
+        "name": "Package 1",
+        "price": "\u00a3250 / 2 hours",
+        "includes": "pole + burlesque + photoshoot"
+      },
+      {
+        "name": "Package 2",
+        "price": "\u00a3350 / 2\u20133 hours",
+        "includes": "burlesque + hair & makeup + photoshoot"
+      }
+    ]
+  },
+  "instructors": [
+    {
+      "name": "Cheryl Cooper",
+      "role": "Founder"
+    },
+    {
+      "name": "Carl Halstad",
+      "role": "Pole Fitness Instructor"
+    },
+    {
+      "name": "Emma Rule",
+      "role": "Burlesque Instructor"
+    }
+  ]
 }
